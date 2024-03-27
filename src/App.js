@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import GoldCircle from "./components/GoldCircle";
+import Background from "./components/background";
+import BlurredBox from "./components/blurredbox";
+import Button from "./components/button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Background />
+      <GoldCircle top={"20%"} />
+      <BlurredBox width={"100%"} height={"100%"} name={"LOL BANPICK CONTEST"} />
+      <Button width={"50%"} height={"10%"} name={"START"} />
     </div>
   );
 }
