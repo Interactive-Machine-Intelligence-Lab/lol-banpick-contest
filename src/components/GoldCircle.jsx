@@ -8,6 +8,7 @@ const CircleStyle = styled.img`
   top: ${(props) => props.top};
   align-self: center;
   object-fit: fill;
+  z-index: -1;
 `;
 
 const GoldCircle = (props) => {
