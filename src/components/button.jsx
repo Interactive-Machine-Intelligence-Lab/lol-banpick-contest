@@ -16,11 +16,17 @@ const ButtonStyle = styled.div`
   width: ${(props) => props.width};
   height: ${(props) => props.height};
   backdrop-filter: blur(32px);
+
+  font-size: ${(props) => props.fontsize};
 `;
 
 const Button = (props) => {
   return (
-    <ButtonStyle width={props.width} height={props.height}>
+    <ButtonStyle
+      width={props.width}
+      height={props.height}
+      fontsize={props.fontsize}
+    >
       {props.name}
     </ButtonStyle>
   );

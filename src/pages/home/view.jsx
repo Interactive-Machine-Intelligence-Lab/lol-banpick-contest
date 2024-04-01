@@ -115,7 +115,12 @@ const HomeView = () => {
       </ResponsiveTitleContainer>
 
       <ResponsiveButtonContainer>
-        <Button width={"300px"} height={"60px"} name={"click to start"} />
+        <Button
+          width={"300px"}
+          height={"60px"}
+          name={"click to start"}
+          fontsize={"0.8em"}
+        />
       </ResponsiveButtonContainer>
 
       <div
