@@ -14,6 +14,8 @@ const ContextBoxStyle = styled.div`
   border-image: url(${textbg}) 50 stretch;
 
   display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ContextBox = (props) => {

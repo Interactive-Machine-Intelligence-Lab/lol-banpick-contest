@@ -6,6 +6,7 @@ const BlurredBoxStyle = styled.div`
   font-weight: 100;
   font-size: 48px;
   text-align: center;
+  align-self: center;
   color: #ffffff;
   width: ${(props) => props.width};
   height: ${(props) => props.height};
