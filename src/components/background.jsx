@@ -24,9 +24,9 @@ const BackgroundStyle = styled.div`
   width: 100%;
   z-index: -2;
 
-  ${media.sm`display: block; height: 200vh;`};
-  ${media.md`display: block; height: 130vh;`};
-  ${media.lg`display: block; height: 130vh;`};
+  ${media.sm`display: block; height: 500vh;`};
+  ${media.md`display: block; height: 530vh;`};
+  ${media.lg`display: block; height: 530vh;`};
 `;
 
 const BackgroundImage = styled.img`
