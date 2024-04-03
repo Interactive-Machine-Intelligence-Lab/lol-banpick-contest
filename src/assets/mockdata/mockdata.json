@@ -1,0 +1,127 @@
+{
+  "leaderboard": {
+    "rank": [
+      {
+        "current_round": 300,
+        "name": "임시훈",
+        "total_score": 166,
+        "user_id": 6
+      },
+      {
+        "current_round": 300,
+        "name": "오주한",
+        "total_score": 161,
+        "user_id": 60
+      },
+      {
+        "current_round": 300,
+        "name": "장해찬",
+        "total_score": 157,
+        "user_id": 32
+      },
+      {
+        "current_round": 300,
+        "name": "정상길",
+        "total_score": 148,
+        "user_id": 42
+      },
+      {
+        "current_round": 287,
+        "name": "강주흔",
+        "total_score": 145,
+        "user_id": 56
+      },
+      {
+        "current_round": 270,
+        "name": "최성우",
+        "total_score": 134,
+        "user_id": 9
+      },
+      {
+        "current_round": 240,
+        "name": "손정한",
+        "total_score": 115,
+        "user_id": 33
+      },
+      {
+        "current_round": 210,
+        "name": "전종호",
+        "total_score": 103,
+        "user_id": 63
+      },
+      {
+        "current_round": 150,
+        "name": "주태건",
+        "total_score": 74,
+        "user_id": 39
+      },
+      {
+        "current_round": 150,
+        "name": "이승혁",
+        "total_score": 72,
+        "user_id": 64
+      },
+      {
+        "current_round": 150,
+        "name": "조인성",
+        "total_score": 72,
+        "user_id": 19
+      },
+      {
+        "current_round": 120,
+        "name": "임정빈",
+        "total_score": 59,
+        "user_id": 62
+      },
+      {
+        "current_round": 120,
+        "name": "김김김",
+        "total_score": 58,
+        "user_id": 10
+      },
+      {
+        "current_round": 90,
+        "name": "홍길돈",
+        "total_score": 49,
+        "user_id": 38
+      },
+      {
+        "current_round": 81,
+        "name": "홍준화",
+        "total_score": 47,
+        "user_id": 68
+      },
+      {
+        "current_round": 90,
+        "name": "이장원",
+        "total_score": 41,
+        "user_id": 15
+      },
+      {
+        "current_round": 90,
+        "name": "이상혁",
+        "total_score": 41,
+        "user_id": 16
+      },
+      {
+        "current_round": 90,
+        "name": "배정원",
+        "total_score": 39,
+        "user_id": 79
+      },
+      {
+        "current_round": 90,
+        "name": "박서방",
+        "total_score": 37,
+        "user_id": 20
+      },
+      {
+        "current_round": 60,
+        "name": "안은사랑",
+        "total_score": 29,
+        "user_id": 70
+      }
+    ],
+    "status": "ok"
+  }
+}

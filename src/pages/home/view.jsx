@@ -8,6 +8,7 @@ import ScoreCircle from "../../components/scorecircle";
 import TitleTextStyle from "../../components/titletext";
 import MenuBar from "./components/menubar";
 import styled from "styled-components";
+import { observer } from "mobx-react";
 
 const sizes = {
   sm: "400px",
@@ -33,7 +34,7 @@ const ResponsiveMenuBarContainer = styled.div`
 
 const MenuButtonContainerStyle = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 22%;
   height: 100%;
@@ -88,7 +89,8 @@ const ContextBoxContainer = styled.div`
   ${media.lg`display: block; width: 420px; height: 484px;`};
 `;
 
-const HomeView = () => {
+const HomeView = observer(({ vm }) => {
+  console.log(vm.isLoggedin);
   return (
     <div
       style={{
@@ -101,10 +103,16 @@ const HomeView = () => {
       <GoldCircle top={"-1000px"} />
       <ResponsiveMenuBarContainer>
         <MenuBar>
-          <MenuButtonContainerStyle>
-            <MenuButtonStyle>로그인</MenuButtonStyle>
-            <MenuButtonStyle>회원가입</MenuButtonStyle>
-          </MenuButtonContainerStyle>
+          {vm.isLoggedin ? (
+            <MenuButtonContainerStyle>
+              <MenuButtonStyle>로그아웃</MenuButtonStyle>
+            </MenuButtonContainerStyle>
+          ) : (
+            <MenuButtonContainerStyle>
+              <MenuButtonStyle>로그인</MenuButtonStyle>
+              <MenuButtonStyle>회원가입</MenuButtonStyle>
+            </MenuButtonContainerStyle>
+          )}
         </MenuBar>
       </ResponsiveMenuBarContainer>
 
@@ -139,7 +147,14 @@ const HomeView = () => {
               children={
                 <div style={{ display: "flex", flexDirection: "column" }}>
                   <BlurredBox height={"60px"} name={"Leaderboards"} />
-                  <div>Leaderboard</div>
+                  <div
+                    style={{
+                      color: "#ffffff",
+                      display: vm.LeaderBoardData === null ? "none" : "block",
+                    }}
+                  >
+                    Leaderboard
+                  </div>
                 </div>
               }
             />
@@ -153,17 +168,25 @@ const HomeView = () => {
                 <div
                   style={{
                     display: "flex",
+                    height: "70%",
                     flexDirection: "column",
                     alignContent: "center",
-                    justifyContent: "center",
+                    justifyContent: "space-between",
                   }}
                 >
                   <BlurredBox height={"60px"} name={"My Best"} />
-                  <ScoreCircle
-                    radius={"250px"}
-                    score={35}
-                    grade={"23 / 5632"}
-                  />
+                  {vm.myScore === null ? (
+                    <BlurredBox
+                      height={"50%"}
+                      name={"Log in or Sign up to Check."}
+                    />
+                  ) : (
+                    <ScoreCircle
+                      radius={"250px"}
+                      score={vm.myScore}
+                      grade={vm.myRanking + " / " + vm.totalRanking}
+                    />
+                  )}
                 </div>
               }
             />
@@ -172,6 +195,6 @@ const HomeView = () => {
       </div>
     </div>
   );
-};
+});
 
 export default HomeView;
