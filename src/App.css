@@ -104,3 +104,8 @@
   font-weight: 900;
   font-style: normal;
 }
+
+.App {
+  font-family: "Pretendard", sans-serif;
+  overflow-x: hidden;
+}

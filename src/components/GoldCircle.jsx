@@ -3,17 +3,20 @@ import assetimage from "../assets/images/goldcircle.png";
 import styled from "styled-components";
 
 const CircleContainer = styled.div`
+  display: flex;
+  justify-content: center;
   overflow: hidden;
-  width: 1920px;
+  width: 100vw;
 `;
 
 const CircleStyle = styled.img`
+  overflow: hidden;
   position: absolute;
-  width: 1920px;
-  top: ${(props) => props.top};
-  align-self: center;
+  width: 100%;
+  min-width: 1400px;
   object-fit: fill;
   z-index: -1;
+  transform: translateY(-50%);
   transform-origin: center center;
 `;
 

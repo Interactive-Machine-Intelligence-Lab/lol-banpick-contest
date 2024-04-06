@@ -16,7 +16,7 @@ const ChampionCardBox = styled.div`
 const ChampionNameCardContainer = styled.div`
   display: flex;
   width: 100%;
-  height: 15%;
+  height: 100%;
   flex-direction: column;
   background-image: url(${BorderImage});
   background-position: center;
@@ -25,6 +25,8 @@ const ChampionNameCardContainer = styled.div`
 `;
 
 const ChampionNameStyle = styled.div`
+  width: 100%;
+  height: 100%;
   font-family: Beaufort;
   font-weight: 900;
   color: #ffffff;
@@ -33,6 +35,8 @@ const ChampionNameStyle = styled.div`
 `;
 
 const TeamNameStyle = styled.div`
+  width: 100%;
+  height: 100%;
   font-family: Beaufort;
   font-weight: 700;
   margin: 3% 3% 0 5%;
