@@ -1,4 +1,8 @@
 {
+  "result": {
+    "current": { "rank": 786, "score": 23, "total": 1000 },
+    "best": { "rank": 233, "score": 34, "total": 1000 }
+  },
   "match": {
     "is_change_round": 0,
     "match": {

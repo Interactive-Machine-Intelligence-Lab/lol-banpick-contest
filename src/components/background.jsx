@@ -62,7 +62,7 @@ const Background = () => {
     <BackgroundStyle
       style={{
         overflow: "hidden",
-        height: divHeight,
+        height: divHeight < "100vh" ? divHeight : "100vh",
       }}
     >
       <BackgroundImage src={bgimage} />
