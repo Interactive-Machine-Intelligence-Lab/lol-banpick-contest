@@ -1,19 +1,22 @@
 import React from "react";
 import styled from "styled-components";
+import assetimage from "../../../assets/images/goldcircle.png";
 import TitleLine from "../../../assets/images/TitleLine.png";
 import Trophy from "../../../assets/images/trophy.png";
 
 const FlexBox = styled.div`
   display: flex;
-  width: 100%;
+  width: 70%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 `;
 
 const TeamColorStyle = styled.div`
   width: 100%;
   height: 25px;
+  z-index: 3;
 
   font-family: Beaufort;
   font-style: normal;
@@ -25,8 +28,9 @@ const TeamColorStyle = styled.div`
 `;
 
 const ChampionPositionStyle = styled.div`
-  width: 100%;
+  width: 150%;
   height: 100px;
+  z-index: 3;
 
   font-family: Beaufort;
   font-style: normal;
@@ -60,6 +64,7 @@ const MostRateStyle = styled.div`
   text-align: center;
 
   color: #ffffff;
+  z-index: 3;
 `;
 
 const HeadingStyle = styled.span`
@@ -73,12 +78,26 @@ const ValueStyle = styled.span`
 const TitleLineStyle = styled.img`
   width: 30%;
   position: absolute;
-  transform: translateY(10vh);
+  transform: scale(1.3);
+  z-index: -1;
+  min-width: 500px;
 `;
 
-const Title = ({ team, position, champion, most, rate }) => {
+const Title = ({ team, position, champion, most, rate, onClickF }) => {
   return (
-    <FlexBox>
+    <div
+      style={{
+        zIndex: 3,
+        top: 0,
+        marginBottom: "10%",
+        display: "flex",
+        width: "100%",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+      onClick={onClickF}
+    >
       <TitleLineStyle src={TitleLine} />
       <TeamColorStyle>{"Team " + team}</TeamColorStyle>
       <ChampionPositionStyle>
@@ -95,28 +114,45 @@ const Title = ({ team, position, champion, most, rate }) => {
           <ValueStyle>{rate}</ValueStyle>
         </div>
       </MostRateStyle>
-    </FlexBox>
+    </div>
   );
 };
 
 const ScrollableBox = styled.div`
-  width: 60%;
-  max-height: 60vh;
+  width: auto;
+  height: 60vh;
+  max-height: 580px;
 
   display: flex;
 
   flex-direction: column;
   justify-content: center;
 
+  overflow-x: auto;
   overflow-y: scroll;
   z-index: 3;
 
   background-color: rgba(255, 255, 255, 0.1);
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 20%;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #c89b3c;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(33, 122, 244, 0.1);
+  }
 `;
 
 const MatchTemplateCard = styled.div`
   width: 100%;
   height: 100px;
+  z-index: 3;
 
   display: flex;
   flex-direction: row;
@@ -159,74 +195,136 @@ const TrophyImage = styled.div`
 `;
 
 const BeforeMatchCard = ({ data }) => {
+  console.log(data);
   return (
     <MatchTemplateCard>
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.blue_team.top.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[0]}
       />
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.blue_team.jungle.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[1]}
       />
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.blue_team.mid.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[2]}
       />
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.blue_team.adc.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[3]}
       />
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.blue_team.support.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[4]}
       />
-      <TrophyImage win={"blue"}>
+      <TrophyImage win={data.winTeam === 0 ? "blue" : "red"}>
         <img src={Trophy} alt="Example" width={30} height={30} />
       </TrophyImage>
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
-        ifIsMe={true}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.red_team.top.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[5]}
       />
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.red_team.jungle.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[6]}
       />
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.red_team.mid.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[7]}
       />
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.red_team.adc.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[8]}
       />
       <ChampionImage
-        src={`${process.env.PUBLIC_URL}/image/${"Aatrox" + "_squared.jpg"}`}
+        src={`${process.env.PUBLIC_URL}/image/${
+          data.red_team.support.display_name + "_squared.jpg"
+        }`}
+        ifIsMe={data.myPosition[9]}
       />
     </MatchTemplateCard>
   );
 };
 
-const BeforeMatchView = () => {
-  return (
-    <FlexBox>
-      <Title
-        team={"Red"}
-        position={"Top"}
-        champion={"Garen"}
-        most={"Riven"}
-        rate={"63.3%"}
-      />
-      <ScrollableBox>
-        <BeforeMatchCard />
-        <BeforeMatchCard />
-        <BeforeMatchCard />
-        <BeforeMatchCard />
+const BeforeMatchView = ({ data, handleClose }) => {
+  if (data === null) {
+    return null;
+  } else {
+    return (
+      <div
+        style={{
+          width: "100vw",
+          height: "100vh",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            display: "flex",
+            width: "100vw",
+            height: "100vh",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+          onClick={handleClose}
+        >
+          <img
+            src={assetimage}
+            alt="GoldCircle"
+            style={{ width: "100%", minWidth: 1400 }}
+          />
+        </div>
 
-        <BeforeMatchCard />
-        <BeforeMatchCard />
-        <BeforeMatchCard />
-        <BeforeMatchCard />
-
-        <BeforeMatchCard />
-        <BeforeMatchCard />
-        <BeforeMatchCard />
-        <BeforeMatchCard />
-      </ScrollableBox>
-    </FlexBox>
-  );
+        <FlexBox>
+          <Title
+            team={data.currentTeam}
+            position={data.currentPosition}
+            champion={data.currentChampion}
+            most={data.Most}
+            rate={(data.WinRate * 100).toFixed(0) + "%"}
+            onClickF={handleClose}
+          />
+          <ScrollableBox>
+            <div
+              style={{
+                height: "100%",
+                minWidth: 800,
+                maxWidth: 1200,
+              }}
+            >
+              {data.History.map((element) => (
+                <BeforeMatchCard data={element} />
+              ))}
+            </div>
+          </ScrollableBox>
+        </FlexBox>
+      </div>
+    );
+  }
 };
 
 export default BeforeMatchView;

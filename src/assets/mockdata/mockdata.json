@@ -5243,6 +5243,14 @@
     "status": "ok",
     "total_round": 1
   },
+  "postwin": {
+    "round_a": 1,
+    "round_b": 3,
+    "score": 1,
+    "status": "ok",
+    "total_round": 3,
+    "total_score": 1
+  },
   "leaderboard": {
     "rank": [
       {

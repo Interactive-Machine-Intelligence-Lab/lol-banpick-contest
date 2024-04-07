@@ -22,7 +22,7 @@ const BackgroundStyle = styled.div`
   position: absolute;
   display: flex;
   width: 100%;
-  z-index: -2;
+  z-index: -5;
 
   ${media.sm`display: block; `};
   ${media.md`display: block; `};

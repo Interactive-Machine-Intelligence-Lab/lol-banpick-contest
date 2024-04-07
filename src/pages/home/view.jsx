@@ -11,7 +11,7 @@ import styled from "styled-components";
 import { observer } from "mobx-react";
 
 const sizes = {
-  sm: "400px",
+  sm: "360px",
   md: "760px",
   lg: "1150px",
   xl: "1440px",

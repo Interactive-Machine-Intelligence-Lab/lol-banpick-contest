@@ -25,6 +25,7 @@ const ContextBoxStyle = styled.div`
 const ContextBox = (props) => {
   return (
     <ContextBoxStyle
+      style={props.style}
       width={props.width}
       height={props.height}
       direction={props.direction}
