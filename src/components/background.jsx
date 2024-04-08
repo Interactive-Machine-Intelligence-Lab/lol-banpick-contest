@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import bgimage from "../assets/images/bgimage.png";
 
@@ -24,25 +24,49 @@ const BackgroundStyle = styled.div`
   display: flex;
   height: ${(props) => props.height};
   width: 100%;
-  z-index: -2;
+  z-index: -5;
 
-  ${media.sm`display: block; height: ${(props) => props.height}`};
-  ${media.md`display: block; height: ${(props) => props.height}`};
-  ${media.lg`display: block; height: ${(props) => props.height}`};
+  ${media.sm`display: block; `};
+  ${media.md`display: block; `};
+  ${media.lg`display: block;`};
 `;
 
 const BackgroundImage = styled.img`
   width: 100%;
   height: 100%;
+  overflow: hidden;
   object-fit: fill;
   transform: scale(1.1);
   filter: blur(12px);
 `;
 
-const Background = (props) => {
-  console.log("height", props.height);
+const Background = () => {
+  const [divHeight, setDivHeight] = useState("auto");
+
+  useEffect(() => {
+    const updateHeight = () => {
+      const totalHeight = document.body.scrollHeight;
+      setDivHeight(`${totalHeight + 50}px`);
+    };
+
+    updateHeight();
+
+    const resizeObserver = new ResizeObserver((entries) => {
+      updateHeight();
+    });
+
+    resizeObserver.observe(document.body);
+
+    return () => resizeObserver.disconnect();
+  }, []);
+
   return (
-    <BackgroundStyle height={props.height}>
+    <BackgroundStyle
+      style={{
+        overflow: "hidden",
+        height: divHeight < "100vh" ? divHeight : "100vh",
+      }}
+    >
       <BackgroundImage src={bgimage} />
     </BackgroundStyle>
   );

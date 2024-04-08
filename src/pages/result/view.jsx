@@ -3,14 +3,19 @@ import styled from "styled-components";
 import BlurredBox from "../../components/blurredbox";
 import ContextBox from "../../components/contextbox";
 import ScoreCircle from "../../components/scorecircle";
+import Background from "../../components/background";
 import Button from "../../components/button";
+import { observer } from "mobx-react";
 
 const FlexBox = styled.div`
   display: flex;
   width: 100%;
+  height: 100vh;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 300px;
+  overflow-y: auto;
 `;
 
 const RowBox = styled.div`
@@ -51,88 +56,99 @@ const RowButtonBox = styled.div`
   align-items: center;
 `;
 
-const ResultView = ({ data }) => {
+const ResultView = observer(({ vm }) => {
   return (
-    <FlexBox>
-      <ContextBox width="80vw" height="75vh" direction={"column"}>
-        <div
-          style={{
-            padding: "2%",
-            display: "flex",
-            width: "100%",
-            height: "100%",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "space-between",
-          }}
-        >
-          <BlurredBox
-            name="68th / 17567"
-            width="35%"
-            height="15%"
-            fontsize={"3em"}
-          />
-          <RowBox>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignContent: "center",
-                justifyContent: "center",
-                marginRight: "30%",
-              }}
-            >
-              <BlurredBox
-                width="30%"
-                height="60%"
-                fontsize={"3em"}
-                fontweight={"700"}
-                position={"absolute"}
-              />
-              <ColumnBox>
-                <HeadingStyle>My Best</HeadingStyle>
-                <ScoreCircle radius={"250px"} score={35} grade={"23 / 5632"} />
-              </ColumnBox>
-            </div>
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignContent: "center",
-                justifyContent: "center",
-              }}
-            >
-              <BlurredBox
-                width="30%"
-                height="60%"
-                fontsize={"3em"}
-                fontweight={"700"}
-                position={"absolute"}
-              />
-              <ColumnBox>
-                <HeadingStyle>My Score</HeadingStyle>
-                <ScoreCircle radius={"250px"} score={35} grade={"23 / 5632"} />
-              </ColumnBox>
-            </div>
-          </RowBox>
-        </div>
-        <RowButtonBox>
-          <Button
-            width={"40%"}
-            height={"30%"}
-            name={"Retry"}
-            fontsize={"2em"}
-          />
-          <Button
-            width={"40%"}
-            height={"30%"}
-            name={"Go Home"}
-            fontsize={"2em"}
-          />
-        </RowButtonBox>
-      </ContextBox>
-    </FlexBox>
+    <div>
+      <Background />
+      <FlexBox>
+        <ContextBox width="80vw" height="75vh" direction={"column"}>
+          <div
+            style={{
+              padding: "2%",
+              display: "flex",
+              width: "100%",
+              height: "100%",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
+            <BlurredBox
+              name={vm.myCurrentRanking + "th / " + vm.totalPeople}
+              width="35%"
+              height="15%"
+              fontsize={"3em"}
+            />
+            <RowBox>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignContent: "center",
+                  justifyContent: "center",
+                  marginRight: "30%",
+                }}
+              >
+                <BlurredBox
+                  width="30%"
+                  height="60%"
+                  fontsize={"3em"}
+                  fontweight={"700"}
+                  position={"absolute"}
+                />
+                <ColumnBox>
+                  <HeadingStyle>My Best</HeadingStyle>
+                  <ScoreCircle
+                    radius={"250px"}
+                    score={vm.myBestScore}
+                    grade={vm.myBestRanking + " / " + vm.totalPeople}
+                  />
+                </ColumnBox>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignContent: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <BlurredBox
+                  width="30%"
+                  height="60%"
+                  fontsize={"3em"}
+                  fontweight={"700"}
+                  position={"absolute"}
+                />
+                <ColumnBox>
+                  <HeadingStyle>My Score</HeadingStyle>
+                  <ScoreCircle
+                    radius={"250px"}
+                    score={vm.myCurrentScore}
+                    grade={vm.myCurrentRanking + " / " + vm.totalPeople}
+                  />
+                </ColumnBox>
+              </div>
+            </RowBox>
+          </div>
+          <RowButtonBox>
+            <Button
+              width={"40%"}
+              height={"30%"}
+              name={"Retry"}
+              fontsize={"2em"}
+            />
+            <Button
+              width={"40%"}
+              height={"30%"}
+              name={"Go Home"}
+              fontsize={"2em"}
+            />
+          </RowButtonBox>
+        </ContextBox>
+      </FlexBox>
+    </div>
   );
-};
+});
 
 export default ResultView;

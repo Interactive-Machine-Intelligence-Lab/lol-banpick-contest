@@ -1,4 +1,5260 @@
 {
+  "result": {
+    "current": { "rank": 786, "score": 23, "total": 1000 },
+    "best": { "rank": 233, "score": 34, "total": 1000 }
+  },
+  "match": {
+    "is_change_round": 0,
+    "match": {
+      "blue_team": {
+        "adc": {
+          "champ": {
+            "champ_id": 152,
+            "display_name": "Aphelios"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 158,
+                  "display_name": "Lillia"
+                },
+                "mid": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 34,
+                  "display_name": "Shaco"
+                }
+              },
+              "history_id": 0,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 144,
+                  "display_name": "Ivern"
+                },
+                "mid": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                },
+                "support": {
+                  "champ_id": 121,
+                  "display_name": "Braum"
+                },
+                "top": {
+                  "champ_id": 142,
+                  "display_name": "Illaoi"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                },
+                "support": {
+                  "champ_id": 129,
+                  "display_name": "Senna"
+                },
+                "top": {
+                  "champ_id": 149,
+                  "display_name": "Ornn"
+                }
+              },
+              "history_id": 1,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 128,
+                  "display_name": "Viego"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 102,
+                  "display_name": "Jayce"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "jungle": {
+                  "champ_id": 34,
+                  "display_name": "Shaco"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 45,
+                  "display_name": "Trundle"
+                }
+              },
+              "history_id": 2,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 133,
+                  "display_name": "Ekko"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 69,
+                  "display_name": "Gragas"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 34,
+                  "display_name": "Shaco"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 110,
+                  "display_name": "Zyra"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 3,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "mid": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                },
+                "support": {
+                  "champ_id": 164,
+                  "display_name": "Milio"
+                },
+                "top": {
+                  "champ_id": 159,
+                  "display_name": "Gwen"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 135,
+                  "display_name": "Vi"
+                },
+                "mid": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 126,
+                  "display_name": "TahmKench"
+                }
+              },
+              "history_id": 4,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                },
+                "support": {
+                  "champ_id": 83,
+                  "display_name": "Lux"
+                },
+                "top": {
+                  "champ_id": 65,
+                  "display_name": "Nasus"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 102,
+                  "display_name": "Jayce"
+                }
+              },
+              "history_id": 5,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 34,
+                  "display_name": "Shaco"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 110,
+                  "display_name": "Zyra"
+                },
+                "top": {
+                  "champ_id": 75,
+                  "display_name": "Kennen"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 108,
+                  "display_name": "Kayn"
+                },
+                "mid": {
+                  "champ_id": 117,
+                  "display_name": "Taliyah"
+                },
+                "support": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "history_id": 6,
+              "my_role": 4,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 140,
+                  "display_name": "Samira"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "support": {
+                  "champ_id": 129,
+                  "display_name": "Senna"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "jungle": {
+                  "champ_id": 85,
+                  "display_name": "Shyvana"
+                },
+                "mid": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                },
+                "support": {
+                  "champ_id": 112,
+                  "display_name": "Seraphine"
+                },
+                "top": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                }
+              },
+              "history_id": 7,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 8,
+                  "display_name": "Fiddlesticks"
+                },
+                "mid": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                },
+                "support": {
+                  "champ_id": 24,
+                  "display_name": "Morgana"
+                },
+                "top": {
+                  "champ_id": 80,
+                  "display_name": "Riven"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 89,
+                  "display_name": "Volibear"
+                },
+                "mid": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                },
+                "support": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "history_id": 8,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 85,
+                  "display_name": "Shyvana"
+                },
+                "mid": {
+                  "champ_id": 3,
+                  "display_name": "TwistedFate"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 44,
+                  "display_name": "Veigar"
+                },
+                "support": {
+                  "champ_id": 121,
+                  "display_name": "Braum"
+                },
+                "top": {
+                  "champ_id": 13,
+                  "display_name": "Sion"
+                }
+              },
+              "history_id": 9,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 108,
+                  "display_name": "Kayn"
+                },
+                "mid": {
+                  "champ_id": 86,
+                  "display_name": "Ahri"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 40,
+                  "display_name": "Gangplank"
+                }
+              },
+              "win_team": 1
+            }
+          ],
+          "most_pick": {
+            "champ_id": 162,
+            "display_name": "KSante"
+          },
+          "win_rate": 0.39
+        },
+        "jungle": {
+          "champ": {
+            "champ_id": 79,
+            "display_name": "Talon"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 140,
+                  "display_name": "Samira"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                }
+              },
+              "history_id": 0,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 124,
+                  "display_name": "Zeri"
+                },
+                "jungle": {
+                  "champ_id": 127,
+                  "display_name": "Briar"
+                },
+                "mid": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 78,
+                  "display_name": "Malzahar"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 76,
+                  "display_name": "Garen"
+                },
+                "mid": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "support": {
+                  "champ_id": 110,
+                  "display_name": "Zyra"
+                },
+                "top": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                }
+              },
+              "history_id": 1,
+              "my_role": 1,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 98,
+                  "display_name": "Draven"
+                },
+                "jungle": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "mid": {
+                  "champ_id": 93,
+                  "display_name": "Viktor"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 14,
+                  "display_name": "Sivir"
+                },
+                "jungle": {
+                  "champ_id": 117,
+                  "display_name": "Taliyah"
+                },
+                "mid": {
+                  "champ_id": 12,
+                  "display_name": "Ryze"
+                },
+                "support": {
+                  "champ_id": 139,
+                  "display_name": "Yuumi"
+                },
+                "top": {
+                  "champ_id": 102,
+                  "display_name": "Jayce"
+                }
+              },
+              "history_id": 2,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 8,
+                  "display_name": "Fiddlesticks"
+                },
+                "mid": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "support": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "top": {
+                  "champ_id": 40,
+                  "display_name": "Gangplank"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 18,
+                  "display_name": "Warwick"
+                },
+                "mid": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "support": {
+                  "champ_id": 83,
+                  "display_name": "Lux"
+                },
+                "top": {
+                  "champ_id": 35,
+                  "display_name": "DrMundo"
+                }
+              },
+              "history_id": 3,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 66,
+                  "display_name": "Nidalee"
+                },
+                "mid": {
+                  "champ_id": 166,
+                  "display_name": "Naafiri"
+                },
+                "support": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 143,
+                  "display_name": "RekSai"
+                },
+                "mid": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "support": {
+                  "champ_id": 110,
+                  "display_name": "Zyra"
+                },
+                "top": {
+                  "champ_id": 114,
+                  "display_name": "Zac"
+                }
+              },
+              "history_id": 4,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 134,
+                  "display_name": "Qiyana"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 5,
+                  "display_name": "Urgot"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "jungle": {
+                  "champ_id": 32,
+                  "display_name": "Rammus"
+                },
+                "mid": {
+                  "champ_id": 50,
+                  "display_name": "Katarina"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 5,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 114,
+                  "display_name": "Zac"
+                },
+                "support": {
+                  "champ_id": 153,
+                  "display_name": "Rell"
+                },
+                "top": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 100,
+                  "display_name": "Khazix"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 114,
+                  "display_name": "Zac"
+                }
+              },
+              "history_id": 6,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                },
+                "support": {
+                  "champ_id": 121,
+                  "display_name": "Braum"
+                },
+                "top": {
+                  "champ_id": 72,
+                  "display_name": "Mordekaiser"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 145,
+                  "display_name": "Kalista"
+                },
+                "jungle": {
+                  "champ_id": 108,
+                  "display_name": "Kayn"
+                },
+                "mid": {
+                  "champ_id": 41,
+                  "display_name": "Corki"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 7,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 17,
+                  "display_name": "Tristana"
+                },
+                "jungle": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "mid": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "support": {
+                  "champ_id": 160,
+                  "display_name": "Renata"
+                },
+                "top": {
+                  "champ_id": 114,
+                  "display_name": "Zac"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 78,
+                  "display_name": "Malzahar"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 5,
+                  "display_name": "Urgot"
+                },
+                "support": {
+                  "champ_id": 25,
+                  "display_name": "Zilean"
+                },
+                "top": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                }
+              },
+              "history_id": 8,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 166,
+                  "display_name": "Naafiri"
+                },
+                "mid": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "support": {
+                  "champ_id": 83,
+                  "display_name": "Lux"
+                },
+                "top": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 145,
+                  "display_name": "Kalista"
+                },
+                "jungle": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "mid": {
+                  "champ_id": 41,
+                  "display_name": "Corki"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "history_id": 9,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "mid": {
+                  "champ_id": 114,
+                  "display_name": "Zac"
+                },
+                "support": {
+                  "champ_id": 42,
+                  "display_name": "Karma"
+                },
+                "top": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                }
+              },
+              "win_team": 0
+            }
+          ],
+          "most_pick": {
+            "champ_id": 74,
+            "display_name": "Akali"
+          },
+          "win_rate": 0.53
+        },
+        "mid": {
+          "champ": {
+            "champ_id": 156,
+            "display_name": "Yone"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 143,
+                  "display_name": "RekSai"
+                },
+                "mid": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 142,
+                  "display_name": "Illaoi"
+                }
+              },
+              "history_id": 0,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 19,
+                  "display_name": "Nunu"
+                },
+                "mid": {
+                  "champ_id": 102,
+                  "display_name": "Jayce"
+                },
+                "support": {
+                  "champ_id": 36,
+                  "display_name": "Sona"
+                },
+                "top": {
+                  "champ_id": 73,
+                  "display_name": "Yorick"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 67,
+                  "display_name": "Udyr"
+                },
+                "mid": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                },
+                "support": {
+                  "champ_id": 139,
+                  "display_name": "Yuumi"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "history_id": 1,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 120,
+                  "display_name": "Belveth"
+                },
+                "mid": {
+                  "champ_id": 17,
+                  "display_name": "Tristana"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 90,
+                  "display_name": "Rengar"
+                },
+                "mid": {
+                  "champ_id": 72,
+                  "display_name": "Mordekaiser"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "history_id": 2,
+              "my_role": 3,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 117,
+                  "display_name": "Taliyah"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 53,
+                  "display_name": "Renekton"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 109,
+                  "display_name": "Zoe"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 3,
+              "my_role": 3,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 151,
+                  "display_name": "Neeko"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 96,
+                  "display_name": "Ziggs"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                }
+              },
+              "history_id": 4,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "jungle": {
+                  "champ_id": 69,
+                  "display_name": "Gragas"
+                },
+                "mid": {
+                  "champ_id": 72,
+                  "display_name": "Mordekaiser"
+                },
+                "support": {
+                  "champ_id": 153,
+                  "display_name": "Rell"
+                },
+                "top": {
+                  "champ_id": 32,
+                  "display_name": "Rammus"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 114,
+                  "display_name": "Zac"
+                },
+                "mid": {
+                  "champ_id": 78,
+                  "display_name": "Malzahar"
+                },
+                "support": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "history_id": 5,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "jungle": {
+                  "champ_id": 135,
+                  "display_name": "Vi"
+                },
+                "mid": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "support": {
+                  "champ_id": 153,
+                  "display_name": "Rell"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 140,
+                  "display_name": "Samira"
+                },
+                "jungle": {
+                  "champ_id": 117,
+                  "display_name": "Taliyah"
+                },
+                "mid": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "support": {
+                  "champ_id": 153,
+                  "display_name": "Rell"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "history_id": 6,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 14,
+                  "display_name": "Sivir"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 80,
+                  "display_name": "Riven"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "mid": {
+                  "champ_id": 131,
+                  "display_name": "Zed"
+                },
+                "support": {
+                  "champ_id": 36,
+                  "display_name": "Sona"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 7,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 67,
+                  "display_name": "Udyr"
+                },
+                "mid": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                },
+                "support": {
+                  "champ_id": 153,
+                  "display_name": "Rell"
+                },
+                "top": {
+                  "champ_id": 159,
+                  "display_name": "Gwen"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 26,
+                  "display_name": "Singed"
+                }
+              },
+              "history_id": 8,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 98,
+                  "display_name": "Draven"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 69,
+                  "display_name": "Gragas"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 137,
+                  "display_name": "Nami"
+                },
+                "top": {
+                  "champ_id": 1,
+                  "display_name": "Olaf"
+                }
+              },
+              "history_id": 9,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 8,
+                  "display_name": "Fiddlesticks"
+                },
+                "mid": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "support": {
+                  "champ_id": 146,
+                  "display_name": "Bard"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 1
+            }
+          ],
+          "most_pick": {
+            "champ_id": 38,
+            "display_name": "Irelia"
+          },
+          "win_rate": 0.56
+        },
+        "support": {
+          "champ": {
+            "champ_id": 112,
+            "display_name": "Seraphine"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 98,
+                  "display_name": "Draven"
+                },
+                "jungle": {
+                  "champ_id": 133,
+                  "display_name": "Ekko"
+                },
+                "mid": {
+                  "champ_id": 117,
+                  "display_name": "Taliyah"
+                },
+                "support": {
+                  "champ_id": 36,
+                  "display_name": "Sona"
+                },
+                "top": {
+                  "champ_id": 52,
+                  "display_name": "Maokai"
+                }
+              },
+              "history_id": 0,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 20,
+                  "display_name": "MissFortune"
+                },
+                "jungle": {
+                  "champ_id": 34,
+                  "display_name": "Shaco"
+                },
+                "mid": {
+                  "champ_id": 86,
+                  "display_name": "Ahri"
+                },
+                "support": {
+                  "champ_id": 83,
+                  "display_name": "Lux"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 96,
+                  "display_name": "Ziggs"
+                },
+                "jungle": {
+                  "champ_id": 120,
+                  "display_name": "Belveth"
+                },
+                "mid": {
+                  "champ_id": 83,
+                  "display_name": "Lux"
+                },
+                "support": {
+                  "champ_id": 36,
+                  "display_name": "Sona"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "history_id": 1,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 42,
+                  "display_name": "Karma"
+                },
+                "top": {
+                  "champ_id": 52,
+                  "display_name": "Maokai"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 152,
+                  "display_name": "Aphelios"
+                },
+                "jungle": {
+                  "champ_id": 100,
+                  "display_name": "Khazix"
+                },
+                "mid": {
+                  "champ_id": 30,
+                  "display_name": "Chogath"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 42,
+                  "display_name": "Karma"
+                }
+              },
+              "history_id": 2,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 140,
+                  "display_name": "Samira"
+                },
+                "jungle": {
+                  "champ_id": 99,
+                  "display_name": "Hecarim"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 9,
+                  "display_name": "Kayle"
+                }
+              },
+              "history_id": 3,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 13,
+                  "display_name": "Sion"
+                },
+                "jungle": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "mid": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 96,
+                  "display_name": "Ziggs"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 9,
+                  "display_name": "Kayle"
+                }
+              },
+              "history_id": 4,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 32,
+                  "display_name": "Rammus"
+                },
+                "mid": {
+                  "champ_id": 106,
+                  "display_name": "Syndra"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 93,
+                  "display_name": "Viktor"
+                }
+              },
+              "history_id": 5,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 145,
+                  "display_name": "Kalista"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 157,
+                  "display_name": "Sett"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 152,
+                  "display_name": "Aphelios"
+                },
+                "jungle": {
+                  "champ_id": 117,
+                  "display_name": "Taliyah"
+                },
+                "mid": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "support": {
+                  "champ_id": 164,
+                  "display_name": "Milio"
+                },
+                "top": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                }
+              },
+              "history_id": 6,
+              "my_role": 4,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 69,
+                  "display_name": "Gragas"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 8,
+                  "display_name": "Fiddlesticks"
+                },
+                "top": {
+                  "champ_id": 113,
+                  "display_name": "Gnar"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "history_id": 7,
+              "my_role": 4,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 99,
+                  "display_name": "Hecarim"
+                },
+                "mid": {
+                  "champ_id": 86,
+                  "display_name": "Ahri"
+                },
+                "support": {
+                  "champ_id": 110,
+                  "display_name": "Zyra"
+                },
+                "top": {
+                  "champ_id": 80,
+                  "display_name": "Riven"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 131,
+                  "display_name": "Zed"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 149,
+                  "display_name": "Ornn"
+                }
+              },
+              "history_id": 8,
+              "my_role": 4,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 10,
+                  "display_name": "MasterYi"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 159,
+                  "display_name": "Gwen"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 27,
+                  "display_name": "Evelynn"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                }
+              },
+              "history_id": 9,
+              "my_role": 4,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 127,
+                  "display_name": "Briar"
+                },
+                "mid": {
+                  "champ_id": 106,
+                  "display_name": "Syndra"
+                },
+                "support": {
+                  "champ_id": 112,
+                  "display_name": "Seraphine"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "win_team": 1
+            }
+          ],
+          "most_pick": {
+            "champ_id": 52,
+            "display_name": "Maokai"
+          },
+          "win_rate": 0.51
+        },
+        "top": {
+          "champ": {
+            "champ_id": 119,
+            "display_name": "Akshan"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "history_id": 0,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 135,
+                  "display_name": "Vi"
+                },
+                "mid": {
+                  "champ_id": 133,
+                  "display_name": "Ekko"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "history_id": 1,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 90,
+                  "display_name": "Rengar"
+                },
+                "mid": {
+                  "champ_id": 88,
+                  "display_name": "Fizz"
+                },
+                "support": {
+                  "champ_id": 110,
+                  "display_name": "Zyra"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 30,
+                  "display_name": "Chogath"
+                }
+              },
+              "history_id": 2,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 123,
+                  "display_name": "Kindred"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 143,
+                  "display_name": "RekSai"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 102,
+                  "display_name": "Jayce"
+                }
+              },
+              "history_id": 3,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 140,
+                  "display_name": "Samira"
+                },
+                "jungle": {
+                  "champ_id": 133,
+                  "display_name": "Ekko"
+                },
+                "mid": {
+                  "champ_id": 37,
+                  "display_name": "Kassadin"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 34,
+                  "display_name": "Shaco"
+                },
+                "mid": {
+                  "champ_id": 86,
+                  "display_name": "Ahri"
+                },
+                "support": {
+                  "champ_id": 83,
+                  "display_name": "Lux"
+                },
+                "top": {
+                  "champ_id": 89,
+                  "display_name": "Volibear"
+                }
+              },
+              "history_id": 4,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 133,
+                  "display_name": "Ekko"
+                },
+                "mid": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 127,
+                  "display_name": "Briar"
+                },
+                "mid": {
+                  "champ_id": 50,
+                  "display_name": "Katarina"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 5,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 106,
+                  "display_name": "Syndra"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "history_id": 6,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 100,
+                  "display_name": "Khazix"
+                },
+                "mid": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "support": {
+                  "champ_id": 154,
+                  "display_name": "Pyke"
+                },
+                "top": {
+                  "champ_id": 80,
+                  "display_name": "Riven"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 133,
+                  "display_name": "Ekko"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 64,
+                  "display_name": "Heimerdinger"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "history_id": 7,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 124,
+                  "display_name": "Zeri"
+                },
+                "jungle": {
+                  "champ_id": 135,
+                  "display_name": "Vi"
+                },
+                "mid": {
+                  "champ_id": 106,
+                  "display_name": "Syndra"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 102,
+                  "display_name": "Jayce"
+                },
+                "support": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 8,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                },
+                "mid": {
+                  "champ_id": 93,
+                  "display_name": "Viktor"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "mid": {
+                  "champ_id": 86,
+                  "display_name": "Ahri"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "history_id": 9,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 14,
+                  "display_name": "Sivir"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 7,
+                  "display_name": "Vladimir"
+                },
+                "support": {
+                  "champ_id": 139,
+                  "display_name": "Yuumi"
+                },
+                "top": {
+                  "champ_id": 80,
+                  "display_name": "Riven"
+                }
+              },
+              "win_team": 1
+            }
+          ],
+          "most_pick": {
+            "champ_id": 136,
+            "display_name": "Aatrox"
+          },
+          "win_rate": 0.53
+        }
+      },
+      "patch_id": 45,
+      "red_team": {
+        "adc": {
+          "champ": {
+            "champ_id": 47,
+            "display_name": "Caitlyn"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 152,
+                  "display_name": "Aphelios"
+                },
+                "jungle": {
+                  "champ_id": 66,
+                  "display_name": "Nidalee"
+                },
+                "mid": {
+                  "champ_id": 44,
+                  "display_name": "Veigar"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 45,
+                  "display_name": "Trundle"
+                }
+              },
+              "history_id": 0,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 127,
+                  "display_name": "Briar"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 32,
+                  "display_name": "Rammus"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 152,
+                  "display_name": "Aphelios"
+                },
+                "jungle": {
+                  "champ_id": 143,
+                  "display_name": "RekSai"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 164,
+                  "display_name": "Milio"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "history_id": 1,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 29,
+                  "display_name": "Karthus"
+                },
+                "mid": {
+                  "champ_id": 17,
+                  "display_name": "Tristana"
+                },
+                "support": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "top": {
+                  "champ_id": 7,
+                  "display_name": "Vladimir"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 128,
+                  "display_name": "Viego"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 28,
+                  "display_name": "Twitch"
+                },
+                "top": {
+                  "champ_id": 162,
+                  "display_name": "KSante"
+                }
+              },
+              "history_id": 2,
+              "my_role": 3,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "mid": {
+                  "champ_id": 119,
+                  "display_name": "Akshan"
+                },
+                "support": {
+                  "champ_id": 164,
+                  "display_name": "Milio"
+                },
+                "top": {
+                  "champ_id": 16,
+                  "display_name": "Teemo"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 106,
+                  "display_name": "Syndra"
+                },
+                "support": {
+                  "champ_id": 164,
+                  "display_name": "Milio"
+                },
+                "top": {
+                  "champ_id": 89,
+                  "display_name": "Volibear"
+                }
+              },
+              "history_id": 3,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                },
+                "mid": {
+                  "champ_id": 109,
+                  "display_name": "Zoe"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 24,
+                  "display_name": "Morgana"
+                },
+                "top": {
+                  "champ_id": 45,
+                  "display_name": "Trundle"
+                }
+              },
+              "history_id": 4,
+              "my_role": 3,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "jungle": {
+                  "champ_id": 8,
+                  "display_name": "Fiddlesticks"
+                },
+                "mid": {
+                  "champ_id": 131,
+                  "display_name": "Zed"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 55,
+                  "display_name": "Elise"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 13,
+                  "display_name": "Sion"
+                }
+              },
+              "history_id": 5,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 94,
+                  "display_name": "Sejuani"
+                },
+                "mid": {
+                  "champ_id": 131,
+                  "display_name": "Zed"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 85,
+                  "display_name": "Shyvana"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 57,
+                  "display_name": "MonkeyKing"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "history_id": 6,
+              "my_role": 3,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 98,
+                  "display_name": "Draven"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                },
+                "support": {
+                  "champ_id": 154,
+                  "display_name": "Pyke"
+                },
+                "top": {
+                  "champ_id": 40,
+                  "display_name": "Gangplank"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 66,
+                  "display_name": "Nidalee"
+                },
+                "mid": {
+                  "champ_id": 26,
+                  "display_name": "Singed"
+                },
+                "support": {
+                  "champ_id": 146,
+                  "display_name": "Bard"
+                },
+                "top": {
+                  "champ_id": 118,
+                  "display_name": "Camille"
+                }
+              },
+              "history_id": 7,
+              "my_role": 3,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 85,
+                  "display_name": "Shyvana"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 139,
+                  "display_name": "Yuumi"
+                },
+                "top": {
+                  "champ_id": 69,
+                  "display_name": "Gragas"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 135,
+                  "display_name": "Vi"
+                },
+                "mid": {
+                  "champ_id": 138,
+                  "display_name": "Azir"
+                },
+                "support": {
+                  "champ_id": 129,
+                  "display_name": "Senna"
+                },
+                "top": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                }
+              },
+              "history_id": 8,
+              "my_role": 3,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 31,
+                  "display_name": "Amumu"
+                },
+                "mid": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                },
+                "support": {
+                  "champ_id": 28,
+                  "display_name": "Twitch"
+                },
+                "top": {
+                  "champ_id": 40,
+                  "display_name": "Gangplank"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 19,
+                  "display_name": "Nunu"
+                },
+                "mid": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 13,
+                  "display_name": "Sion"
+                }
+              },
+              "history_id": 9,
+              "my_role": 4,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 152,
+                  "display_name": "Aphelios"
+                },
+                "jungle": {
+                  "champ_id": 135,
+                  "display_name": "Vi"
+                },
+                "mid": {
+                  "champ_id": 112,
+                  "display_name": "Seraphine"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 9,
+                  "display_name": "Kayle"
+                }
+              },
+              "win_team": 1
+            }
+          ],
+          "most_pick": {
+            "champ_id": 71,
+            "display_name": "Ezreal"
+          },
+          "win_rate": 0.47
+        },
+        "jungle": {
+          "champ": {
+            "champ_id": 4,
+            "display_name": "XinZhao"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 90,
+                  "display_name": "Rengar"
+                }
+              },
+              "history_id": 0,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "mid": {
+                  "champ_id": 116,
+                  "display_name": "Velkoz"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 55,
+                  "display_name": "Elise"
+                },
+                "mid": {
+                  "champ_id": 134,
+                  "display_name": "Qiyana"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "history_id": 1,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "top": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 62,
+                  "display_name": "Cassiopeia"
+                },
+                "support": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 2,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "jungle": {
+                  "champ_id": 117,
+                  "display_name": "Taliyah"
+                },
+                "mid": {
+                  "champ_id": 88,
+                  "display_name": "Fizz"
+                },
+                "support": {
+                  "champ_id": 154,
+                  "display_name": "Pyke"
+                },
+                "top": {
+                  "champ_id": 82,
+                  "display_name": "Shen"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 100,
+                  "display_name": "Khazix"
+                },
+                "mid": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "history_id": 3,
+              "my_role": 1,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "support": {
+                  "champ_id": 160,
+                  "display_name": "Renata"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 66,
+                  "display_name": "Nidalee"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                },
+                "top": {
+                  "champ_id": 76,
+                  "display_name": "Garen"
+                }
+              },
+              "history_id": 4,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 120,
+                  "display_name": "Belveth"
+                },
+                "mid": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 89,
+                  "display_name": "Volibear"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 110,
+                  "display_name": "Zyra"
+                },
+                "top": {
+                  "champ_id": 145,
+                  "display_name": "Kalista"
+                }
+              },
+              "history_id": 5,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 144,
+                  "display_name": "Ivern"
+                },
+                "mid": {
+                  "champ_id": 33,
+                  "display_name": "Anivia"
+                },
+                "support": {
+                  "champ_id": 164,
+                  "display_name": "Milio"
+                },
+                "top": {
+                  "champ_id": 102,
+                  "display_name": "Jayce"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 76,
+                  "display_name": "Garen"
+                }
+              },
+              "history_id": 6,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 27,
+                  "display_name": "Evelynn"
+                },
+                "mid": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 108,
+                  "display_name": "Kayn"
+                }
+              },
+              "history_id": 7,
+              "my_role": 1,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 152,
+                  "display_name": "Aphelios"
+                },
+                "jungle": {
+                  "champ_id": 66,
+                  "display_name": "Nidalee"
+                },
+                "mid": {
+                  "champ_id": 158,
+                  "display_name": "Lillia"
+                },
+                "support": {
+                  "champ_id": 42,
+                  "display_name": "Karma"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 96,
+                  "display_name": "Ziggs"
+                },
+                "jungle": {
+                  "champ_id": 4,
+                  "display_name": "XinZhao"
+                },
+                "mid": {
+                  "champ_id": 119,
+                  "display_name": "Akshan"
+                },
+                "support": {
+                  "champ_id": 39,
+                  "display_name": "Janna"
+                },
+                "top": {
+                  "champ_id": 142,
+                  "display_name": "Illaoi"
+                }
+              },
+              "history_id": 8,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 14,
+                  "display_name": "Sivir"
+                },
+                "jungle": {
+                  "champ_id": 108,
+                  "display_name": "Kayn"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 89,
+                  "display_name": "Volibear"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 4,
+                  "display_name": "XinZhao"
+                },
+                "mid": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "support": {
+                  "champ_id": 42,
+                  "display_name": "Karma"
+                },
+                "top": {
+                  "champ_id": 40,
+                  "display_name": "Gangplank"
+                }
+              },
+              "history_id": 9,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 27,
+                  "display_name": "Evelynn"
+                },
+                "mid": {
+                  "champ_id": 86,
+                  "display_name": "Ahri"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "win_team": 1
+            }
+          ],
+          "most_pick": {
+            "champ_id": 87,
+            "display_name": "Graves"
+          },
+          "win_rate": 0.54
+        },
+        "mid": {
+          "champ": {
+            "champ_id": 70,
+            "display_name": "Pantheon"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 140,
+                  "display_name": "Samira"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 134,
+                  "display_name": "Qiyana"
+                },
+                "support": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 0,
+              "my_role": 4,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 99,
+                  "display_name": "Hecarim"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 53,
+                  "display_name": "Renekton"
+                }
+              },
+              "history_id": 1,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 72,
+                  "display_name": "Mordekaiser"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 98,
+                  "display_name": "Draven"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 93,
+                  "display_name": "Viktor"
+                },
+                "support": {
+                  "champ_id": 24,
+                  "display_name": "Morgana"
+                },
+                "top": {
+                  "champ_id": 69,
+                  "display_name": "Gragas"
+                }
+              },
+              "history_id": 2,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 40,
+                  "display_name": "Gangplank"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 20,
+                  "display_name": "MissFortune"
+                },
+                "jungle": {
+                  "champ_id": 34,
+                  "display_name": "Shaco"
+                },
+                "mid": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "history_id": 3,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 134,
+                  "display_name": "Qiyana"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 134,
+                  "display_name": "Qiyana"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "history_id": 4,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 124,
+                  "display_name": "Zeri"
+                },
+                "jungle": {
+                  "champ_id": 100,
+                  "display_name": "Khazix"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 39,
+                  "display_name": "Janna"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 4,
+                  "display_name": "XinZhao"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 39,
+                  "display_name": "Janna"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "history_id": 5,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 108,
+                  "display_name": "Kayn"
+                },
+                "mid": {
+                  "champ_id": 33,
+                  "display_name": "Anivia"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "mid": {
+                  "champ_id": 119,
+                  "display_name": "Akshan"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 149,
+                  "display_name": "Ornn"
+                }
+              },
+              "history_id": 6,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 31,
+                  "display_name": "Amumu"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 61,
+                  "display_name": "Rumble"
+                }
+              },
+              "history_id": 7,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 128,
+                  "display_name": "Viego"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                }
+              },
+              "history_id": 8,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "mid": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                },
+                "support": {
+                  "champ_id": 83,
+                  "display_name": "Lux"
+                },
+                "top": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 55,
+                  "display_name": "Elise"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 53,
+                  "display_name": "Renekton"
+                }
+              },
+              "history_id": 9,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 42,
+                  "display_name": "Karma"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 0
+            }
+          ],
+          "most_pick": {
+            "champ_id": 48,
+            "display_name": "Blitzcrank"
+          },
+          "win_rate": 0.54
+        },
+        "support": {
+          "champ": {
+            "champ_id": 48,
+            "display_name": "Blitzcrank"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 140,
+                  "display_name": "Samira"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 134,
+                  "display_name": "Qiyana"
+                },
+                "support": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 0,
+              "my_role": 1,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 99,
+                  "display_name": "Hecarim"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 53,
+                  "display_name": "Renekton"
+                }
+              },
+              "history_id": 1,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 72,
+                  "display_name": "Mordekaiser"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 98,
+                  "display_name": "Draven"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 93,
+                  "display_name": "Viktor"
+                },
+                "support": {
+                  "champ_id": 24,
+                  "display_name": "Morgana"
+                },
+                "top": {
+                  "champ_id": 69,
+                  "display_name": "Gragas"
+                }
+              },
+              "history_id": 2,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 40,
+                  "display_name": "Gangplank"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 20,
+                  "display_name": "MissFortune"
+                },
+                "jungle": {
+                  "champ_id": 34,
+                  "display_name": "Shaco"
+                },
+                "mid": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "support": {
+                  "champ_id": 11,
+                  "display_name": "Alistar"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "history_id": 3,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 134,
+                  "display_name": "Qiyana"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 165,
+                  "display_name": "Hwei"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 134,
+                  "display_name": "Qiyana"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 58,
+                  "display_name": "Brand"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "history_id": 4,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 124,
+                  "display_name": "Zeri"
+                },
+                "jungle": {
+                  "champ_id": 100,
+                  "display_name": "Khazix"
+                },
+                "mid": {
+                  "champ_id": 115,
+                  "display_name": "Yasuo"
+                },
+                "support": {
+                  "champ_id": 39,
+                  "display_name": "Janna"
+                },
+                "top": {
+                  "champ_id": 101,
+                  "display_name": "Darius"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 4,
+                  "display_name": "XinZhao"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 39,
+                  "display_name": "Janna"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "history_id": 5,
+              "my_role": 0,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 108,
+                  "display_name": "Kayn"
+                },
+                "mid": {
+                  "champ_id": 33,
+                  "display_name": "Anivia"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 60,
+                  "display_name": "Vayne"
+                },
+                "jungle": {
+                  "champ_id": 104,
+                  "display_name": "Diana"
+                },
+                "mid": {
+                  "champ_id": 119,
+                  "display_name": "Akshan"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 149,
+                  "display_name": "Ornn"
+                }
+              },
+              "history_id": 6,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 31,
+                  "display_name": "Amumu"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 61,
+                  "display_name": "Rumble"
+                }
+              },
+              "history_id": 7,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 128,
+                  "display_name": "Viego"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 150,
+                  "display_name": "Sylas"
+                }
+              },
+              "history_id": 8,
+              "my_role": 4,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "mid": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                },
+                "support": {
+                  "champ_id": 83,
+                  "display_name": "Lux"
+                },
+                "top": {
+                  "champ_id": 6,
+                  "display_name": "Leblanc"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 55,
+                  "display_name": "Elise"
+                },
+                "mid": {
+                  "champ_id": 56,
+                  "display_name": "Orianna"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 53,
+                  "display_name": "Renekton"
+                }
+              },
+              "history_id": 9,
+              "my_role": 0,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 70,
+                  "display_name": "Pantheon"
+                },
+                "support": {
+                  "champ_id": 42,
+                  "display_name": "Karma"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 0
+            }
+          ],
+          "most_pick": {
+            "champ_id": 130,
+            "display_name": "Lucian"
+          },
+          "win_rate": 0.54
+        },
+        "top": {
+          "champ": {
+            "champ_id": 61,
+            "display_name": "Rumble"
+          },
+          "history": [
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 140,
+                  "display_name": "Samira"
+                },
+                "jungle": {
+                  "champ_id": 24,
+                  "display_name": "Morgana"
+                },
+                "mid": {
+                  "champ_id": 46,
+                  "display_name": "Swain"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 72,
+                  "display_name": "Mordekaiser"
+                }
+              },
+              "history_id": 0,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 128,
+                  "display_name": "Viego"
+                },
+                "mid": {
+                  "champ_id": 138,
+                  "display_name": "Azir"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 65,
+                  "display_name": "Nasus"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 51,
+                  "display_name": "Nocturne"
+                },
+                "mid": {
+                  "champ_id": 3,
+                  "display_name": "TwistedFate"
+                },
+                "support": {
+                  "champ_id": 33,
+                  "display_name": "Anivia"
+                },
+                "top": {
+                  "champ_id": 118,
+                  "display_name": "Camille"
+                }
+              },
+              "history_id": 1,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 46,
+                  "display_name": "Swain"
+                },
+                "support": {
+                  "champ_id": 129,
+                  "display_name": "Senna"
+                },
+                "top": {
+                  "champ_id": 156,
+                  "display_name": "Yone"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 61,
+                  "display_name": "Rumble"
+                },
+                "support": {
+                  "champ_id": 15,
+                  "display_name": "Soraka"
+                },
+                "top": {
+                  "champ_id": 38,
+                  "display_name": "Irelia"
+                }
+              },
+              "history_id": 2,
+              "my_role": 4,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 91,
+                  "display_name": "Varus"
+                },
+                "jungle": {
+                  "champ_id": 127,
+                  "display_name": "Briar"
+                },
+                "mid": {
+                  "champ_id": 3,
+                  "display_name": "TwistedFate"
+                },
+                "support": {
+                  "champ_id": 21,
+                  "display_name": "Ashe"
+                },
+                "top": {
+                  "champ_id": 49,
+                  "display_name": "Malphite"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 81,
+                  "display_name": "KogMaw"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 46,
+                  "display_name": "Swain"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 142,
+                  "display_name": "Illaoi"
+                }
+              },
+              "history_id": 3,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 99,
+                  "display_name": "Hecarim"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 164,
+                  "display_name": "Milio"
+                },
+                "top": {
+                  "champ_id": 22,
+                  "display_name": "Tryndamere"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "mid": {
+                  "champ_id": 46,
+                  "display_name": "Swain"
+                },
+                "support": {
+                  "champ_id": 92,
+                  "display_name": "Nautilus"
+                },
+                "top": {
+                  "champ_id": 23,
+                  "display_name": "Jax"
+                }
+              },
+              "history_id": 4,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 130,
+                  "display_name": "Lucian"
+                },
+                "jungle": {
+                  "champ_id": 135,
+                  "display_name": "Vi"
+                },
+                "mid": {
+                  "champ_id": 3,
+                  "display_name": "TwistedFate"
+                },
+                "support": {
+                  "champ_id": 164,
+                  "display_name": "Milio"
+                },
+                "top": {
+                  "champ_id": 75,
+                  "display_name": "Kennen"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 145,
+                  "display_name": "Kalista"
+                },
+                "jungle": {
+                  "champ_id": 79,
+                  "display_name": "Talon"
+                },
+                "mid": {
+                  "champ_id": 86,
+                  "display_name": "Ahri"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 76,
+                  "display_name": "Garen"
+                }
+              },
+              "history_id": 5,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 159,
+                  "display_name": "Gwen"
+                },
+                "mid": {
+                  "champ_id": 46,
+                  "display_name": "Swain"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 149,
+                  "display_name": "Ornn"
+                }
+              },
+              "win_team": 0
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 119,
+                  "display_name": "Akshan"
+                },
+                "support": {
+                  "champ_id": 141,
+                  "display_name": "Thresh"
+                },
+                "top": {
+                  "champ_id": 132,
+                  "display_name": "Kled"
+                }
+              },
+              "history_id": 6,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 71,
+                  "display_name": "Ezreal"
+                },
+                "jungle": {
+                  "champ_id": 87,
+                  "display_name": "Graves"
+                },
+                "mid": {
+                  "champ_id": 46,
+                  "display_name": "Swain"
+                },
+                "support": {
+                  "champ_id": 15,
+                  "display_name": "Soraka"
+                },
+                "top": {
+                  "champ_id": 89,
+                  "display_name": "Volibear"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 47,
+                  "display_name": "Caitlyn"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 106,
+                  "display_name": "Syndra"
+                },
+                "support": {
+                  "champ_id": 77,
+                  "display_name": "Leona"
+                },
+                "top": {
+                  "champ_id": 105,
+                  "display_name": "Quinn"
+                }
+              },
+              "history_id": 7,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 98,
+                  "display_name": "Draven"
+                },
+                "jungle": {
+                  "champ_id": 66,
+                  "display_name": "Nidalee"
+                },
+                "mid": {
+                  "champ_id": 46,
+                  "display_name": "Swain"
+                },
+                "support": {
+                  "champ_id": 153,
+                  "display_name": "Rell"
+                },
+                "top": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 111,
+                  "display_name": "Kaisa"
+                },
+                "jungle": {
+                  "champ_id": 128,
+                  "display_name": "Viego"
+                },
+                "mid": {
+                  "champ_id": 46,
+                  "display_name": "Swain"
+                },
+                "support": {
+                  "champ_id": 84,
+                  "display_name": "Xerath"
+                },
+                "top": {
+                  "champ_id": 136,
+                  "display_name": "Aatrox"
+                }
+              },
+              "history_id": 8,
+              "my_role": 2,
+              "my_team": 0,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 122,
+                  "display_name": "Jhin"
+                },
+                "jungle": {
+                  "champ_id": 54,
+                  "display_name": "JarvanIV"
+                },
+                "mid": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                },
+                "support": {
+                  "champ_id": 48,
+                  "display_name": "Blitzcrank"
+                },
+                "top": {
+                  "champ_id": 95,
+                  "display_name": "Fiora"
+                }
+              },
+              "win_team": 1
+            },
+            {
+              "blue_team": {
+                "adc": {
+                  "champ_id": 125,
+                  "display_name": "Jinx"
+                },
+                "jungle": {
+                  "champ_id": 59,
+                  "display_name": "LeeSin"
+                },
+                "mid": {
+                  "champ_id": 9,
+                  "display_name": "Kayle"
+                },
+                "support": {
+                  "champ_id": 97,
+                  "display_name": "Lulu"
+                },
+                "top": {
+                  "champ_id": 74,
+                  "display_name": "Akali"
+                }
+              },
+              "history_id": 9,
+              "my_role": 2,
+              "my_team": 1,
+              "patch_id": 45,
+              "red_team": {
+                "adc": {
+                  "champ_id": 148,
+                  "display_name": "Xayah"
+                },
+                "jungle": {
+                  "champ_id": 68,
+                  "display_name": "Poppy"
+                },
+                "mid": {
+                  "champ_id": 61,
+                  "display_name": "Rumble"
+                },
+                "support": {
+                  "champ_id": 147,
+                  "display_name": "Rakan"
+                },
+                "top": {
+                  "champ_id": 102,
+                  "display_name": "Jayce"
+                }
+              },
+              "win_team": 0
+            }
+          ],
+          "most_pick": {
+            "champ_id": 46,
+            "display_name": "Swain"
+          },
+          "win_rate": 0.49
+        }
+      }
+    },
+    "round_a": 1,
+    "round_b": 1,
+    "status": "ok",
+    "total_round": 1
+  },
+  "postwin": {
+    "round_a": 1,
+    "round_b": 3,
+    "score": 1,
+    "status": "ok",
+    "total_round": 3,
+    "total_score": 1
+  },
   "leaderboard": {
     "rank": [
       {
