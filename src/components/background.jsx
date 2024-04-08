@@ -19,14 +19,16 @@ const media = Object.keys(sizes).reduce((acc, label) => {
 }, {});
 
 const BackgroundStyle = styled.div`
+  overflow: hidden;
   position: absolute;
   display: flex;
+  height: ${(props) => props.height};
   width: 100%;
   z-index: -2;
 
-  ${media.sm`display: block; height: 500vh;`};
-  ${media.md`display: block; height: 530vh;`};
-  ${media.lg`display: block; height: 530vh;`};
+  ${media.sm`display: block; height: ${(props) => props.height}`};
+  ${media.md`display: block; height: ${(props) => props.height}`};
+  ${media.lg`display: block; height: ${(props) => props.height}`};
 `;
 
 const BackgroundImage = styled.img`
@@ -37,13 +39,10 @@ const BackgroundImage = styled.img`
   filter: blur(12px);
 `;
 
-const Background = () => {
+const Background = (props) => {
+  console.log("height", props.height);
   return (
-    <BackgroundStyle
-      style={{
-        overflow: "hidden",
-      }}
-    >
+    <BackgroundStyle height={props.height}>
       <BackgroundImage src={bgimage} />
     </BackgroundStyle>
   );

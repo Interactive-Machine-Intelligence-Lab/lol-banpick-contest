@@ -99,7 +99,7 @@ const HomeView = observer(({ vm }) => {
         alignItems: "center",
       }}
     >
-      <Background />
+      <Background height={"200vh"} />
       <GoldCircle top={"-1000px"} />
       <ResponsiveMenuBarContainer>
         <MenuBar>

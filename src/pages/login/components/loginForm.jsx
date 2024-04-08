@@ -8,7 +8,7 @@ const FlexBox = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 90%;
 `;
 
 const TitleStyle = styled.div`
@@ -46,7 +46,7 @@ const InputContainer = styled.input`
   height: 40px;
   color: #000000;
   font-weight: 400;
-  background: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.7);
   border: 1px solid #565656;
   border-radius: 8px;
 
