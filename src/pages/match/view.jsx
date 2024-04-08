@@ -7,7 +7,6 @@ import BeforeMatchView from "./components/beforeMatchView";
 import WinPick from "./components/pickWin";
 import Background from "../../components/background";
 import SideMenuBtn from "../../assets/images/sidemenubutton.png";
-import { toJS } from "mobx";
 import { observer } from "mobx-react";
 import RoundBoard from "./components/roundBoard";
 

@@ -195,7 +195,6 @@ const TrophyImage = styled.div`
 `;
 
 const BeforeMatchCard = ({ data }) => {
-  console.log(data);
   return (
     <MatchTemplateCard>
       <ChampionImage

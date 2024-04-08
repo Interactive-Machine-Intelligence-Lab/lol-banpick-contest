@@ -136,7 +136,6 @@ class MatchViewModel {
       this.beforeMatchIndex
     );
     this.BeforeMatchData = parsedBeforeMatchData;
-    console.log(parsedBeforeMatchData);
   };
 
   constructor() {

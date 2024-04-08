@@ -44,27 +44,24 @@ const Background = () => {
   const [divHeight, setDivHeight] = useState("auto");
 
   useEffect(() => {
-    const updateHeight = () => {
-      const totalHeight = document.body.scrollHeight;
-      setDivHeight(`${totalHeight + 50}px`);
-    };
+    if (typeof window !== "undefined") {
+      const handleResize = () => {
+        setDivHeight(`${document.documentElement.scrollHeight + 50}px`);
+      };
 
-    updateHeight();
+      // 초기 사이즈 설정
+      handleResize();
 
-    const resizeObserver = new ResizeObserver((entries) => {
-      updateHeight();
-    });
-
-    resizeObserver.observe(document.body);
-
-    return () => resizeObserver.disconnect();
+      window.addEventListener("resize", handleResize);
+      return () => window.removeEventListener("resize", handleResize);
+    }
   }, []);
 
   return (
     <BackgroundStyle
       style={{
         overflow: "hidden",
-        height: divHeight < "100vh" ? divHeight : "100vh",
+        height: divHeight < "100vh" ? "100vh" : divHeight,
       }}
     >
       <BackgroundImage src={bgimage} />

@@ -1,8 +1,8 @@
 import React from "react";
-import Background from "../../components/background";
-import LoginForm from "./components/loginForm";
+import Background from "../../../components/background";
+import { SignUpForm } from "../components/loginForm";
 
-const LoginView = () => {
+const SignUpView = () => {
   return (
     <div
       style={{
@@ -13,8 +13,9 @@ const LoginView = () => {
       }}
     >
       <Background height={"130vh"} />
-      <LoginForm isLogin={false} />
+      <SignUpForm />
     </div>
   );
 };
-export default LoginView;
+
+export default SignUpView;

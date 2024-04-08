@@ -5,6 +5,7 @@ import BorderImage from "../../../assets/images/contextbg.png";
 const ChampionCardBox = styled.div`
   width: 10vw;
   height: 35vh;
+  min-height: 350px;
   margin: 0.5%;
   display: flex;
   flex-direction: column;
