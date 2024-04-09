@@ -1,7 +1,8 @@
+import axios from "axios";
 import { makeAutoObservable, runInAction } from "mobx";
 import mockdata from "../../assets/mockdata/mockdata.json";
 
-const development = true;
+const development = false;
 
 async function parseLeaderBoard(data) {
   let result = [];
@@ -27,6 +28,21 @@ class HomeViewModel {
     this.initialize();
   }
 
+  getLeaderBoardData = async () => {
+    try {
+      const response = await axios.get(
+        "https://lol.dshs.site/api/leaderboard/total_leaderboard"
+      );
+      console.log(response);
+      const parsedData = await parseLeaderBoard(response.data.leaderboard);
+      runInAction(() => {
+        this.LeaderBoardData = parsedData;
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   async initialize() {
     const parsedData = await parseLeaderBoard(mockdata.leaderboard.rank);
     runInAction(() => {
@@ -36,6 +52,8 @@ class HomeViewModel {
         this.myRanking = 1;
         this.totalRanking = 100;
         this.myScore = 50;
+      } else {
+        this.getLeaderBoardData();
       }
     });
   }

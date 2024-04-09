@@ -8,6 +8,7 @@ import ScoreCircle from "../../components/scorecircle";
 import TitleTextStyle from "../../components/titletext";
 import MenuBar from "./components/menubar";
 import styled from "styled-components";
+import LeaderBoardContext from "./components/leaderboards";
 import { observer } from "mobx-react";
 
 const sizes = {
@@ -90,7 +91,6 @@ const ContextBoxContainer = styled.div`
 `;
 
 const HomeView = observer(({ vm }) => {
-  console.log(vm.isLoggedin);
   return (
     <div
       style={{
@@ -99,7 +99,7 @@ const HomeView = observer(({ vm }) => {
         alignItems: "center",
       }}
     >
-      <Background height={"200vh"} />
+      <Background height={"120vh"} />
       <GoldCircle top={"-1000px"} />
       <ResponsiveMenuBarContainer>
         <MenuBar>
@@ -145,15 +145,23 @@ const HomeView = observer(({ vm }) => {
               width={"100%"}
               height={"100%"}
               children={
-                <div style={{ display: "flex", flexDirection: "column" }}>
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                  }}
+                >
                   <BlurredBox height={"60px"} name={"Leaderboards"} />
                   <div
                     style={{
                       color: "#ffffff",
                       display: vm.LeaderBoardData === null ? "none" : "block",
+                      margin: "10px",
                     }}
                   >
-                    Leaderboard
+                    <LeaderBoardContext data={vm.LeaderBoardData} />
                   </div>
                 </div>
               }

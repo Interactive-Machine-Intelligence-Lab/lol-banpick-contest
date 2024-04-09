@@ -15,7 +15,7 @@ const LoginView = observer(({ vm }) => {
     >
       <Background height={"130vh"} />
       <LoginForm
-        ID={vm.id}
+        id={vm.id}
         setId={vm.setId}
         pw={vm.password}
         setPW={vm.setPassword}

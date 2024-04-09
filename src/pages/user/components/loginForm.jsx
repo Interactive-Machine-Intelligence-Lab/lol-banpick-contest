@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Button from "../../../components/button";
 
 const FlexBox = styled.div`
   width: 100%;
@@ -84,7 +83,7 @@ const LoginForm = ({ id, setId, pw, setPW, loginStatus, fetchF }) => {
       >
         <InstructionContainer>아이디</InstructionContainer>
         <InputContainer
-          placeholder="4자리 이상 12자리 이하의 영문, 숫자 혼합 가능"
+          placeholder="아이디"
           id="id"
           type="id"
           value={id}
@@ -95,7 +94,7 @@ const LoginForm = ({ id, setId, pw, setPW, loginStatus, fetchF }) => {
         />
         <InstructionContainer>비밀번호</InstructionContainer>
         <InputContainer
-          placeholder="8자리 이상 16자리 이하의 영문, 숫자 혼합 가능"
+          placeholder="비밀번호"
           id="pw"
           type="password"
           value={pw}
@@ -118,35 +117,80 @@ const LoginForm = ({ id, setId, pw, setPW, loginStatus, fetchF }) => {
   );
 };
 
-const SignUpForm = () => {
+const SignUpForm = ({
+  id,
+  setId,
+  pw,
+  setPW,
+  pwcf,
+  setPWcf,
+  riotID,
+  setRiotID,
+  loginStatus,
+  fetchF,
+}) => {
   return (
     <FlexBox>
       <TitleStyle>Sign Up</TitleStyle>
-      <LoginFormContainer>
+      <LoginFormContainer
+        onSubmit={(e) => {
+          e.preventDefault();
+          fetchF();
+        }}
+      >
         <InstructionContainer>아이디</InstructionContainer>
         <InputContainer
           placeholder="4자리 이상 12자리 이하의 영문, 숫자 혼합 가능"
+          id="id"
+          type="id"
+          value={id}
+          onChange={(e) => {
+            setId(e.target.value);
+          }}
           required
         />
         <InstructionContainer>비밀번호</InstructionContainer>
         <InputContainer
-          placeholder="8자리 이상 16자리 이하의 영문, 숫자 혼합"
+          placeholder="8자리 이상 16자리 이하의 영문, 숫자 혼합 가능"
+          id="pw"
+          type="password"
+          value={pw}
+          onChange={(e) => {
+            setPW(e.target.value);
+          }}
           required
         />
         <InstructionContainer>비밀번호 확인</InstructionContainer>
         <InputContainer
           placeholder="같은 비밀번호를 다시 입력해주세요."
+          id="pwcf"
+          type="password"
+          value={pwcf}
+          onChange={(e) => {
+            setPWcf(e.target.value);
+          }}
           required
         />
         <InstructionContainer>{"라이엇 아이디(선택)"}</InstructionContainer>
-        <InputContainer placeholder="ex. Hide on Bush#KR1 (반드시 태그까지 입력)" />
+        <InputContainer
+          placeholder="ex. Hide on Bush#KR1 (반드시 태그까지 입력)"
+          id="riotid"
+          type="id"
+          value={riotID}
+          onChange={(e) => {
+            setRiotID(e.target.value);
+          }}
+        />
+        <ButtonStyle
+          type="submit"
+          disabled={loginStatus === "loading"}
+          width={"15vw"}
+          height={"7vh"}
+          fontsize={"2em"}
+        >
+          Submit
+        </ButtonStyle>
       </LoginFormContainer>
-      <Button
-        name={"Submit"}
-        width={"15vw"}
-        height={"7vh"}
-        fontsize={"2em"}
-      ></Button>
     </FlexBox>
   );
 };
