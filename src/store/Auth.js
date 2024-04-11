@@ -1,6 +1,6 @@
 import { makeAutoObservable } from "mobx";
 
-export const TOKEN_TIME_OUT = 60 * 1000;
+export const TOKEN_TIME_OUT = 24 * 60 * 60 * 1000;
 
 class TokenStore {
   authenticated = false;
