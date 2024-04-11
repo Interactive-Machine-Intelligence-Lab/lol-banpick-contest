@@ -71,7 +71,18 @@ const ButtonStyle = styled.button`
   font-size: ${(props) => props.fontsize};
 `;
 
-const LoginForm = ({ id, setId, pw, setPW, loginStatus, fetchF }) => {
+const ErrorMsgStyle = styled.div`
+  display: ${(props) => (props.status === "error" ? "block" : "none")};
+  font-family: Pretendard;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: rgba(255, 50, 50, 0.8);
+`;
+
+const LoginForm = ({ id, setId, pw, setPW, loginStatus, fetchF, errorMsg }) => {
   return (
     <FlexBox>
       <TitleStyle>Sign In</TitleStyle>
@@ -103,6 +114,7 @@ const LoginForm = ({ id, setId, pw, setPW, loginStatus, fetchF }) => {
           }}
           required
         />
+        <ErrorMsgStyle status={loginStatus}>{errorMsg}</ErrorMsgStyle>
         <ButtonStyle
           type="submit"
           disabled={loginStatus === "loading"}
@@ -128,6 +140,7 @@ const SignUpForm = ({
   setRiotID,
   loginStatus,
   fetchF,
+  errorMsg,
 }) => {
   return (
     <FlexBox>
@@ -181,6 +194,7 @@ const SignUpForm = ({
             setRiotID(e.target.value);
           }}
         />
+        <ErrorMsgStyle status={loginStatus}>{errorMsg}</ErrorMsgStyle>
         <ButtonStyle
           type="submit"
           disabled={loginStatus === "loading"}

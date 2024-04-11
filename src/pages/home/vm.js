@@ -1,8 +1,8 @@
 import axios from "axios";
 import { makeAutoObservable, runInAction } from "mobx";
-import mockdata from "../../assets/mockdata/mockdata.json";
-
-const development = false;
+import { routerStore } from "../../store/route";
+import { tokenStore } from "../../store/Auth";
+import { removeCookieToken } from "../../storage/Cookie";
 
 async function parseLeaderBoard(data) {
   let result = [];
@@ -14,8 +14,14 @@ async function parseLeaderBoard(data) {
   return result;
 }
 
+async function parseMyBestScore(data) {
+  const myRanking = data.rank;
+  const totalRanking = data.num_users;
+  const myScore = data.score;
+  return { myRanking, totalRanking, myScore };
+}
+
 class HomeViewModel {
-  isLoggedin = false;
   LeaderBoardData = null;
 
   myRanking = null;
@@ -24,9 +30,22 @@ class HomeViewModel {
 
   constructor() {
     makeAutoObservable(this);
-
-    this.initialize();
   }
+
+  handleLoginClick = () => {
+    routerStore.goToSignIn();
+  };
+
+  handleSignUpClick = () => {
+    routerStore.goToSignUp();
+  };
+
+  handleLogoutClick = async () => {
+    removeCookieToken();
+    tokenStore.deleteToken();
+    await this.removeMyData();
+    routerStore.goToHome();
+  };
 
   getLeaderBoardData = async () => {
     try {
@@ -42,18 +61,47 @@ class HomeViewModel {
     }
   };
 
+  getMyBestScore = async (token) => {
+    try {
+      const response = await axios.get(
+        "https://lol.dshs.site/api/leaderboard/best_leaderboard",
+        {
+          headers: { Authorization: `Bearer ${token}` },
+        }
+      );
+      const parsedData = await parseMyBestScore(response.data);
+      runInAction(() => {
+        this.myRanking = parsedData.myRanking;
+        this.totalRanking = parsedData.totalRanking;
+        this.myScore = parsedData.myScore;
+      });
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  handleStartClick = () => {
+    if (tokenStore.authenticated) {
+      routerStore.goToMatch();
+    } else {
+      routerStore.goToSignIn();
+    }
+  };
+
   async initialize() {
-    const parsedData = await parseLeaderBoard(mockdata.leaderboard.rank);
     runInAction(() => {
-      if (development) {
-        this.isLoggedin = true;
-        this.LeaderBoardData = parsedData;
-        this.myRanking = 1;
-        this.totalRanking = 100;
-        this.myScore = 50;
-      } else {
-        this.getLeaderBoardData();
+      this.getLeaderBoardData();
+      if (tokenStore.authenticated) {
+        this.getMyBestScore(tokenStore.accessToken);
       }
+    });
+  }
+
+  async removeMyData() {
+    runInAction(() => {
+      this.myRanking = null;
+      this.totalRanking = null;
+      this.myScore = null;
     });
   }
 }

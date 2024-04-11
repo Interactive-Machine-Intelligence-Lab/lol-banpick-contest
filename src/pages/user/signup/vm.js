@@ -1,5 +1,8 @@
 import axios from "axios";
+import { tokenStore } from "../../../store/Auth";
+import { setRefreshToken } from "../../../storage/Cookie";
 import { makeAutoObservable } from "mobx";
+import { routerStore } from "../../../store/route";
 
 class SignUpViewModel {
   id = "";
@@ -7,6 +10,7 @@ class SignUpViewModel {
   passwordConfirm = "";
   riotId = "";
   loginStatus = "idle"; // 'idle', 'loading', 'success', 'error'
+  errormsg = "";
 
   constructor() {
     makeAutoObservable(this);
@@ -83,27 +87,41 @@ class SignUpViewModel {
         site_password: this.password,
       };
     }
+
     try {
       const res = await axios.post(
         "https://lol.dshs.site/api/auth/register",
         context
       );
-      console.log(res);
       this.loginStatus = "success";
-      return res.data;
+      return res;
     } catch (err) {
       console.error(err);
       this.loginStatus = "error";
+      this.errormsg = err.response.data.msg;
       return err;
     }
   };
 
-  handleLogin = async () => {
+  handleRegister = async () => {
     const statusCode = this.determineSatisfaction();
-    console.log(statusCode, this.id, this.password);
+
     if (statusCode === 0) {
       this.loginStatus = "loading";
-      await this.fetchRegister();
+      const response = await this.fetchRegister();
+      const responseStatus = response.status;
+
+      if (parseInt(responseStatus / 100) === 2) {
+        const responseData = response.data;
+        tokenStore.setToken(responseData.access_token);
+        setRefreshToken(responseData.refresh_token);
+        routerStore.goToHome();
+      } else {
+        this.setId("");
+        this.setPassword("");
+        this.setPasswordConfirm("");
+        this.setRiotId("");
+      }
     } else {
       if (statusCode === 1) {
         alert("ID is not satisfied");
@@ -121,8 +139,6 @@ class SignUpViewModel {
         alert("Unknown Error");
       }
     }
-
-    console.log(this.loginStatus);
   };
 }
 

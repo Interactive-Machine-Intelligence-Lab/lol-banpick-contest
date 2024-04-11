@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "../../../components/background";
+import Loading from "../../../components/loading";
 import { observer } from "mobx-react";
 import { SignUpForm } from "../components/loginForm";
 
@@ -13,6 +14,7 @@ const SignUpView = observer(({ vm }) => {
         alignItems: "center",
       }}
     >
+      <Loading show={vm.loginStatus === "loading" ? true : false} />
       <Background height={"130vh"} />
       <SignUpForm
         id={vm.id}
@@ -24,7 +26,8 @@ const SignUpView = observer(({ vm }) => {
         riotID={vm.riotId}
         setRiotID={vm.setRiotId}
         loginStatus={vm.loginStatus}
-        fetchF={vm.handleLogin}
+        fetchF={vm.handleRegister}
+        errorMsg={vm.errormsg}
       />
     </div>
   );

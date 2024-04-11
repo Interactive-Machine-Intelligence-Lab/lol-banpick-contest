@@ -19,7 +19,7 @@ const LoadingContainer = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: rgba(20, 20, 20, 0.2); // 약간 투명한 배경
-  display: flex;
+  display: ${(props) => (props.show ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   z-index: 100;
@@ -35,9 +35,9 @@ const LoadingSpinner = styled.div`
   animation: ${spin} 1s linear infinite;
 `;
 
-const Loading = () => {
+const Loading = ({ show }) => {
   return (
-    <LoadingContainer>
+    <LoadingContainer show={show}>
       <LoadingSpinner />
     </LoadingContainer>
   );

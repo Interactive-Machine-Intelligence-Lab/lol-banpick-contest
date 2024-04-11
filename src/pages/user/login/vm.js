@@ -1,10 +1,14 @@
 import axios from "axios";
 import { makeAutoObservable } from "mobx";
+import { routerStore } from "../../../store/route";
+import { tokenStore } from "../../../store/Auth";
+import { setRefreshToken } from "../../../storage/Cookie";
 
 class LoginViewModel {
   id = "";
   password = "";
   loginStatus = "idle"; // 'idle', 'loading', 'success', 'error'
+  errormsg = "";
 
   constructor() {
     makeAutoObservable(this);
@@ -62,22 +66,32 @@ class LoginViewModel {
         "https://lol.dshs.site/api/auth/login",
         context
       );
-      console.log(res);
       this.loginStatus = "success";
-      return res.data;
+      return res;
     } catch (err) {
-      console.error(err);
       this.loginStatus = "error";
+      this.errormsg = err.response.data.msg;
       return err;
     }
   };
 
   handleLogin = async () => {
     const statusCode = this.determineSatisfaction();
-    console.log(statusCode, this.id, this.password);
+
     if (statusCode === 0) {
       this.loginStatus = "loading";
-      await this.fetchLogin();
+      const response = await this.fetchLogin();
+      const responseStatus = response.status;
+
+      if (parseInt(responseStatus / 100) === 2) {
+        const responseData = response.data;
+        tokenStore.setToken(responseData.access_token);
+        setRefreshToken(responseData.refresh_token);
+        routerStore.goToHome();
+      } else {
+        this.setId("");
+        this.setPassword("");
+      }
     } else {
       if (statusCode === 1) {
         alert("ID is not satisfied");

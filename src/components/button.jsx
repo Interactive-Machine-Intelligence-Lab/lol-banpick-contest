@@ -26,6 +26,7 @@ const Button = (props) => {
       width={props.width}
       height={props.height}
       fontsize={props.fontsize}
+      onClick={props.onClick}
     >
       {props.name}
     </ButtonStyle>

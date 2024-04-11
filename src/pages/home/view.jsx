@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import BlurredBox from "../../components/blurredbox";
 import GoldCircle from "../../components/GoldCircle";
 import Background from "../../components/background";
@@ -10,6 +10,7 @@ import MenuBar from "./components/menubar";
 import styled from "styled-components";
 import LeaderBoardContext from "./components/leaderboards";
 import { observer } from "mobx-react";
+import { tokenStore } from "../../store/Auth";
 
 const sizes = {
   sm: "360px",
@@ -91,6 +92,10 @@ const ContextBoxContainer = styled.div`
 `;
 
 const HomeView = observer(({ vm }) => {
+  useEffect(() => {
+    vm.initialize();
+  }, [vm]);
+
   return (
     <div
       style={{
@@ -103,14 +108,24 @@ const HomeView = observer(({ vm }) => {
       <GoldCircle top={"-1000px"} />
       <ResponsiveMenuBarContainer>
         <MenuBar>
-          {vm.isLoggedin ? (
+          {tokenStore.authenticated ? (
             <MenuButtonContainerStyle>
-              <MenuButtonStyle>로그아웃</MenuButtonStyle>
+              <MenuButtonStyle
+                onClick={() => {
+                  vm.handleLogoutClick();
+                }}
+              >
+                로그아웃
+              </MenuButtonStyle>
             </MenuButtonContainerStyle>
           ) : (
             <MenuButtonContainerStyle>
-              <MenuButtonStyle>로그인</MenuButtonStyle>
-              <MenuButtonStyle>회원가입</MenuButtonStyle>
+              <MenuButtonStyle onClick={vm.handleLoginClick}>
+                로그인
+              </MenuButtonStyle>
+              <MenuButtonStyle onClick={vm.handleSignUpClick}>
+                회원가입
+              </MenuButtonStyle>
             </MenuButtonContainerStyle>
           )}
         </MenuBar>
@@ -128,6 +143,7 @@ const HomeView = observer(({ vm }) => {
           height={"60px"}
           name={"click to start"}
           fontsize={"0.8em"}
+          onClick={vm.handleStartClick}
         />
       </ResponsiveButtonContainer>
 
@@ -183,7 +199,7 @@ const HomeView = observer(({ vm }) => {
                   }}
                 >
                   <BlurredBox height={"60px"} name={"My Best"} />
-                  {vm.myScore === null ? (
+                  {tokenStore.authenticated === false ? (
                     <BlurredBox
                       height={"50%"}
                       name={"Log in or Sign up to Check."}

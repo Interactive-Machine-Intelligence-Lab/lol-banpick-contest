@@ -11,7 +11,19 @@ import SignUpViewModel from "./pages/user/signup/vm";
 import MatchViewModel from "./pages/match/vm";
 import ResultViewModel from "./pages/result/vm";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
+import { routerStore } from "./store/route";
+import { useEffect } from "react";
+
+function NavigationProvider() {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    routerStore.setNavigator(navigate);
+  }, [navigate]);
+
+  return null; // 또는 라우팅 관련 컴포넌트 렌더링
+}
 
 function App() {
   const homevm = new HomeViewModel();
@@ -21,7 +33,8 @@ function App() {
   const SignUpvm = new SignUpViewModel();
 
   return (
-    <BrowserRouter>
+    <>
+      <NavigationProvider />
       <Routes>
         <Route path="/" element={<HomeView vm={homevm} />} />
         <Route path="/user/signup" element={<SignUpView vm={SignUpvm} />} />
@@ -29,7 +42,7 @@ function App() {
         <Route path="/match" element={<MatchView vm={matchvm} />} />
         <Route path="/result" element={<ResultView vm={resultvm} />} />
       </Routes>
-    </BrowserRouter>
+    </>
   );
 }
 

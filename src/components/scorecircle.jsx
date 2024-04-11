@@ -43,9 +43,13 @@ const GradeStyle = styled.div`
   filter: contrast(150%) saturate(150%) brightness(95%);
 `;
 
-const ScoreCircle = (props) => {
+const ScoreCircle = ({ radius, score, grade }) => {
+  if (score === null || grade === null) {
+    return null;
+  }
+
   return (
-    <ScoreCircleStyle radius={props.radius}>
+    <ScoreCircleStyle radius={radius}>
       <img
         src={circleradius}
         alt="circleradius"
@@ -58,8 +62,8 @@ const ScoreCircle = (props) => {
           zIndex: "-1",
         }}
       />
-      <ScoreStyle>{props.score}</ScoreStyle>
-      <GradeStyle>{props.grade}</GradeStyle>
+      <ScoreStyle>{score}</ScoreStyle>
+      <GradeStyle>{grade}</GradeStyle>
     </ScoreCircleStyle>
   );
 };

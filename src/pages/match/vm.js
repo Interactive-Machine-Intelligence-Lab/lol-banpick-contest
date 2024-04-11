@@ -1,8 +1,6 @@
 import { makeAutoObservable, runInAction } from "mobx";
 import axios from "axios";
-import mockdata from "../../assets/mockdata/mockdata.json";
-
-const development = true;
+import { tokenStore } from "../../store/Auth";
 
 const teamMap = {
   0: "blue_team",
@@ -27,7 +25,17 @@ const displayPositionMap = {
   support: "Support",
 };
 
-async function getMatchData() {}
+function getMatchData() {
+  if (tokenStore.authenticated) {
+    const token = tokenStore.accessToken;
+    const response = axios.get("https://lol.dshs.site/api/match/get", {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    });
+    return response.data;
+  }
+}
 
 async function fetchWin(team) {
   await axios.post("/api/match/submit", {
@@ -65,8 +73,8 @@ async function parseMatchData(data) {
 }
 
 async function parseAnswerData(data) {
-  const score = data.total_score;
-  const round = data.total_round;
+  const score = data.score;
+  const round = data.round;
 
   return { score: score, round: round };
 }
@@ -106,7 +114,8 @@ function parseBeforeMatchData(data, index) {
 }
 
 class MatchViewModel {
-  isLoggedin = false;
+  RawData = null;
+
   MatchData = null;
   isSideBarOpen = false;
   beforeMatchIndex = 0;
@@ -132,7 +141,7 @@ class MatchViewModel {
     this.beforeMatchIndex = index;
     this.isBeforeMatchOpen = !this.isBeforeMatchOpen;
     const parsedBeforeMatchData = parseBeforeMatchData(
-      mockdata.match,
+      this.RawData,
       this.beforeMatchIndex
     );
     this.BeforeMatchData = parsedBeforeMatchData;
@@ -140,23 +149,19 @@ class MatchViewModel {
 
   constructor() {
     makeAutoObservable(this);
-
-    this.initialize();
   }
 
   async initialize() {
-    const parsedData = await parseMatchData(mockdata.match);
-    const parsedAnswer = await parseAnswerData(mockdata.postwin);
+    this.RawData = getMatchData();
+    const parsedData = await parseMatchData(this.RawData);
+    const parsedAnswer = await parseAnswerData(this.RawData);
 
     runInAction(() => {
-      if (development) {
-        this.isLoggedin = true;
-        this.MatchData = parsedData;
-        this.BlueChampionData = parsedData.blue;
-        this.RedChampionData = parsedData.red;
-        this.myScore = parsedAnswer.score;
-        this.currentRound = parsedAnswer.round;
-      }
+      this.MatchData = parsedData;
+      this.BlueChampionData = parsedData.blue;
+      this.RedChampionData = parsedData.red;
+      this.myScore = parsedAnswer.score;
+      this.currentRound = parsedAnswer.round;
     });
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "../../../components/background";
+import Loading from "../../../components/loading";
 import { LoginForm } from "../components/loginForm";
 import { observer } from "mobx-react";
 
@@ -13,6 +14,7 @@ const LoginView = observer(({ vm }) => {
         alignItems: "center",
       }}
     >
+      <Loading show={vm.loginStatus === "loading" ? true : false} />
       <Background height={"130vh"} />
       <LoginForm
         id={vm.id}
@@ -21,6 +23,7 @@ const LoginView = observer(({ vm }) => {
         setPW={vm.setPassword}
         loginStatus={vm.loginStatus}
         fetchF={vm.handleLogin}
+        errorMsg={vm.errormsg}
       />
     </div>
   );

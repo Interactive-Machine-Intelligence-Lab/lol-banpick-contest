@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import ChampionCard from "./components/championCard";
 import Loading from "../../components/loading";
@@ -43,7 +43,11 @@ const FullWidthBox = styled.div`
 `;
 
 const MatchView = observer(({ vm }) => {
-  if (vm.BlueChampionData === null) {
+  useEffect(() => {
+    vm.initialize();
+  }, [vm]);
+
+  if (vm.RawData === null) {
     return <Loading />;
   } else {
     return (

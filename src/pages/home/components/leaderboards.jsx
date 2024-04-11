@@ -25,8 +25,12 @@ const LeaderBoardContext = ({ data }) => {
   return (
     <BoardStyle width="100%" height="100%">
       <ol>
-        {data.map((element) => {
-          return <li style={{ marginBottom: "3%" }}>{element.name}</li>;
+        {data.map((element, index) => {
+          return (
+            <li key={index} style={{ marginBottom: "3%" }}>
+              {element.name}
+            </li>
+          );
         })}
       </ol>
     </BoardStyle>
