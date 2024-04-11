@@ -104,9 +104,6 @@ class SignUpViewModel {
     if (statusCode === 0) {
       this.loginStatus = "loading";
       await this.fetchRegister();
-      setTimeout(() => {
-        this.loginStatus = "success";
-      }, 1000);
     } else {
       if (statusCode === 1) {
         alert("ID is not satisfied");

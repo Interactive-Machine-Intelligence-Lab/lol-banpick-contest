@@ -1,3 +1,4 @@
+import axios from "axios";
 import { makeAutoObservable } from "mobx";
 
 class LoginViewModel {
@@ -49,18 +50,34 @@ class LoginViewModel {
     this.password = password;
   };
 
+  fetchLogin = async () => {
+    let context = {};
+    context = {
+      site_id: this.id,
+      site_password: this.password,
+    };
+
+    try {
+      const res = await axios.post(
+        "https://lol.dshs.site/api/auth/login",
+        context
+      );
+      console.log(res);
+      this.loginStatus = "success";
+      return res.data;
+    } catch (err) {
+      console.error(err);
+      this.loginStatus = "error";
+      return err;
+    }
+  };
+
   handleLogin = async () => {
     const statusCode = this.determineSatisfaction();
     console.log(statusCode, this.id, this.password);
     if (statusCode === 0) {
       this.loginStatus = "loading";
-      setTimeout(() => {
-        if (this.id === "user@example.com" && this.password === "password") {
-          this.loginStatus = "success";
-        } else {
-          this.loginStatus = "error";
-        }
-      }, 1000);
+      await this.fetchLogin();
     } else {
       if (statusCode === 1) {
         alert("ID is not satisfied");

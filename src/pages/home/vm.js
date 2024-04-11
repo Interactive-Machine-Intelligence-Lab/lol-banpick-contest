@@ -31,9 +31,8 @@ class HomeViewModel {
   getLeaderBoardData = async () => {
     try {
       const response = await axios.get(
-        "https://lol.dshs.site/api/leaderboard/total_leaderboard"
+        "https://lol.dshs.site/api/leaderboard/total_leaderboard/10"
       );
-      console.log(response);
       const parsedData = await parseLeaderBoard(response.data.leaderboard);
       runInAction(() => {
         this.LeaderBoardData = parsedData;
