@@ -114,31 +114,31 @@ const MatchView = observer(({ vm }) => {
           >
             <GridContainer>
               <ChampionCard
-                championName={vm.BlueChampionData.names.top}
+                championName={vm.BlueChampionData?.names?.top}
                 teamPosition={"Blue\nTop"}
                 onClickF={vm.handleBeforeMatch}
                 index={0}
               />
               <ChampionCard
-                championName={vm.BlueChampionData.names.jungle}
+                championName={vm.BlueChampionData?.names?.jungle}
                 teamPosition={"Blue\nJungle"}
                 onClickF={vm.handleBeforeMatch}
                 index={1}
               />
               <ChampionCard
-                championName={vm.BlueChampionData.names.mid}
+                championName={vm.BlueChampionData?.names?.mid}
                 teamPosition={"Blue\nMid"}
                 onClickF={vm.handleBeforeMatch}
                 index={2}
               />
               <ChampionCard
-                championName={vm.BlueChampionData.names.adc}
+                championName={vm.BlueChampionData?.names?.adc}
                 teamPosition={"Blue\nAdc"}
                 onClickF={vm.handleBeforeMatch}
                 index={3}
               />
               <ChampionCard
-                championName={vm.BlueChampionData.names.support}
+                championName={vm.BlueChampionData?.names?.support}
                 teamPosition={"Blue\nSupport"}
                 onClickF={vm.handleBeforeMatch}
                 index={4}
@@ -153,31 +153,31 @@ const MatchView = observer(({ vm }) => {
               </FullWidthBox>
 
               <ChampionCard
-                championName={vm.RedChampionData.names.top}
+                championName={vm.RedChampionData?.names?.top}
                 teamPosition={"Red\nTop"}
                 onClickF={vm.handleBeforeMatch}
                 index={5}
               />
               <ChampionCard
-                championName={vm.RedChampionData.names.jungle}
+                championName={vm.RedChampionData?.names?.jungle}
                 teamPosition={"Red\nJungle"}
                 onClickF={vm.handleBeforeMatch}
                 index={6}
               />
               <ChampionCard
-                championName={vm.RedChampionData.names.mid}
+                championName={vm.RedChampionData?.names?.mid}
                 teamPosition={"Red\nMid"}
                 onClickF={vm.handleBeforeMatch}
                 index={7}
               />
               <ChampionCard
-                championName={vm.RedChampionData.names.adc}
+                championName={vm.RedChampionData?.names?.adc}
                 teamPosition={"Red\nAdc"}
                 onClickF={vm.handleBeforeMatch}
                 index={8}
               />
               <ChampionCard
-                championName={vm.RedChampionData.names.support}
+                championName={vm.RedChampionData?.names?.support}
                 teamPosition={"Red\nSupport"}
                 onClickF={vm.handleBeforeMatch}
                 index={9}

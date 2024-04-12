@@ -1,4 +1,4 @@
-import axios from "axios";
+import { LogInAPI } from "../../../apis/user/userAPIs";
 import { makeAutoObservable } from "mobx";
 import { routerStore } from "../../../store/route";
 import { tokenStore } from "../../../store/Auth";
@@ -20,10 +20,6 @@ class LoginViewModel {
     const idRegex = /^[a-zA-Z0-9]{4,12}$/;
     const pwRegex = /^[a-zA-Z0-9]{8,16}$/;
 
-    //PW는 반복되는 문자열이 4번 이상 있으면 안됨
-    //ID는 대소문자 구분하지 않음
-    const repeatedRegex = /(\w)\1{3,}/;
-
     let statusCode = null;
     // ID and PW are both satisfied 0
     // ID is not satisfied 1
@@ -37,8 +33,6 @@ class LoginViewModel {
       statusCode = 2;
     } else if (!idRegex.test(this.id) && pwRegex.test(this.password)) {
       statusCode = 1;
-    } else if (repeatedRegex.test(this.password)) {
-      statusCode = 4;
     } else {
       statusCode = 0;
     }
@@ -62,12 +56,9 @@ class LoginViewModel {
     };
 
     try {
-      const res = await axios.post(
-        "https://lol.dshs.site/api/auth/login",
-        context
-      );
+      const response = await LogInAPI(context);
       this.loginStatus = "success";
-      return res;
+      return response;
     } catch (err) {
       this.loginStatus = "error";
       this.errormsg = err.response.data.msg;
@@ -94,15 +85,13 @@ class LoginViewModel {
       }
     } else {
       if (statusCode === 1) {
-        alert("ID is not satisfied");
+        this.errormsg = "ID가 조건에 맞지 않습니다.";
       } else if (statusCode === 2) {
-        alert("PW is not satisfied");
+        this.errormsg = "PW가 조건에 맞지 않습니다.";
       } else if (statusCode === 3) {
-        alert("ID and PW are both not satisfied");
-      } else if (statusCode === 4) {
-        alert("PW cannot have repeated characters more than 3 times");
+        this.errormsg = "ID와 PW가 조건에 맞지 않습니다.";
       } else {
-        alert("Unknown Error");
+        this.errormsg = "알 수 없는 오류가 발생했습니다.";
       }
     }
   };

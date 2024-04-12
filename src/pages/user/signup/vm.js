@@ -1,4 +1,4 @@
-import axios from "axios";
+import { UserRegisterAPI } from "../../../apis/user/userAPIs";
 import { tokenStore } from "../../../store/Auth";
 import { setRefreshToken } from "../../../storage/Cookie";
 import { makeAutoObservable } from "mobx";
@@ -24,10 +24,6 @@ class SignUpViewModel {
     const idRegex = /^[a-zA-Z0-9]{4,12}$/;
     const pwRegex = /^[a-zA-Z0-9]{8,16}$/;
 
-    //PW는 반복되는 문자열이 4번 이상 있으면 안됨
-    //ID는 대소문자 구분하지 않음
-    const repeatedRegex = /(\w)\1{3,}/;
-
     let statusCode = null;
     // ID and PW are both satisfied 0
     // ID is not satisfied 1
@@ -43,12 +39,10 @@ class SignUpViewModel {
       statusCode = 2;
     } else if (!idRegex.test(this.id) && pwRegex.test(this.password)) {
       statusCode = 1;
-    } else if (repeatedRegex.test(this.password)) {
-      statusCode = 4;
     } else if (this.password !== this.passwordConfirm) {
-      statusCode = 5;
+      statusCode = 4;
     } else if (!this.riotId.includes("#") && this.riotId.length > 0) {
-      statusCode = 6;
+      statusCode = 5;
     } else {
       statusCode = 0;
     }
@@ -89,12 +83,9 @@ class SignUpViewModel {
     }
 
     try {
-      const res = await axios.post(
-        "https://lol.dshs.site/api/auth/register",
-        context
-      );
+      const response = await UserRegisterAPI(context);
       this.loginStatus = "success";
-      return res;
+      return response;
     } catch (err) {
       console.error(err);
       this.loginStatus = "error";
@@ -124,19 +115,17 @@ class SignUpViewModel {
       }
     } else {
       if (statusCode === 1) {
-        alert("ID is not satisfied");
+        this.errormsg = "ID가 조건에 맞지 않습니다.";
       } else if (statusCode === 2) {
-        alert("PW is not satisfied");
+        this.errormsg = "PW가 조건에 맞지 않습니다.";
       } else if (statusCode === 3) {
-        alert("ID and PW are both not satisfied");
+        this.errormsg = "ID와 PW가 조건에 맞지 않습니다.";
       } else if (statusCode === 4) {
-        alert("PW cannot have repeated characters more than 3 times");
+        this.errormsg = "PW와 PW 확인이 일치하지 않습니다.";
       } else if (statusCode === 5) {
-        alert("PW and PW Confirm are not the same");
-      } else if (statusCode === 6) {
-        alert("Riot ID is not satisfied. Riot ID must include tag.");
+        this.errormsg = "라이엇 아이디가 조건에 맞지 않습니다.";
       } else {
-        alert("Unknown Error");
+        this.errormsg = "알 수 없는 오류가 발생했습니다.";
       }
     }
   };

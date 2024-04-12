@@ -1,6 +1,8 @@
 import { makeAutoObservable, runInAction } from "mobx";
-import axios from "axios";
 import { tokenStore } from "../../store/Auth";
+import MockData from "../../assets/mockdata/mockdata.json";
+import { GetMatchAPI, SubmitAnswerAPI } from "../../apis/match/matchAPIs";
+import { toJS } from "mobx";
 
 const teamMap = {
   0: "blue_team",
@@ -25,23 +27,24 @@ const displayPositionMap = {
   support: "Support",
 };
 
-function getMatchData() {
+async function getMatchData() {
   if (tokenStore.authenticated) {
     const token = tokenStore.accessToken;
-    const response = axios.get("https://lol.dshs.site/api/match/get", {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
-    return response.data;
+    const response = await GetMatchAPI(token);
+    return response;
+  } else {
+    return null;
   }
 }
 
-async function fetchWin(team) {
-  await axios.post("/api/match/submit", {
-    // auth_key: authKey,
-    answer: team,
-  });
+async function submitAnswer(team) {
+  if (tokenStore.authenticated) {
+    const token = tokenStore.accessToken;
+    const response = await SubmitAnswerAPI(token, team);
+    return response;
+  } else {
+    return null;
+  }
 }
 
 function parseChampionNames(teamData) {
@@ -50,15 +53,22 @@ function parseChampionNames(teamData) {
   const mosts = {};
   const winRates = {};
 
-  positions.forEach((position) => {
-    const championName = teamData[position]?.champ?.display_name;
-    const mostChampion = teamData[position]?.most_pick?.display_name;
-    const rate = teamData[position]?.win_rate;
-    if (championName) {
-      names[position] = championName;
-      mosts[position] = mostChampion;
-      winRates[position] = rate;
-    }
+  const dataEachPositions = [
+    teamData?.adc,
+    teamData?.jungle,
+    teamData?.mid,
+    teamData?.support,
+    teamData?.top,
+  ];
+
+  dataEachPositions.forEach((data, index) => {
+    const championName = data?.champ?.display_name;
+    const mostChampion = data?.most_pick?.display_name;
+    const rate = data?.win_rate;
+
+    names[positions[index]] = championName;
+    mosts[positions[index]] = mostChampion;
+    winRates[positions[index]] = rate;
   });
   const total = { names: names, mosts: mosts, winRates: winRates };
 
@@ -66,15 +76,15 @@ function parseChampionNames(teamData) {
 }
 
 async function parseMatchData(data) {
-  const blueData = parseChampionNames(data.match.blue_team);
-  const redData = parseChampionNames(data.match.red_team);
+  const blueData = parseChampionNames(data?.match?.blue_team);
+  const redData = parseChampionNames(data?.match?.red_team);
 
   return { blue: blueData, red: redData };
 }
 
 async function parseAnswerData(data) {
-  const score = data.score;
-  const round = data.round;
+  const score = data?.score;
+  const round = data?.round;
 
   return { score: score, round: round };
 }
@@ -84,10 +94,12 @@ function parseHistory(historyData) {
   for (let i = 0; i < 10; i++) {
     let data = {};
     let myPositionList = new Array(10).fill(false);
-    data["winTeam"] = historyData[i].win_team;
-    data["blue_team"] = historyData[i].blue_team;
-    data["red_team"] = historyData[i].red_team;
-    myPositionList[historyData[i].my_team * 5 + historyData[i].my_role] = true;
+    data["winTeam"] = historyData[i]?.win_team;
+    data["blue_team"] = historyData[i]?.blue_team;
+    data["red_team"] = historyData[i]?.red_team;
+    myPositionList[
+      historyData[i]?.my_team * 5 + historyData[i]?.my_role
+    ] = true;
     data["myPosition"] = myPositionList;
     dataArray.push(data);
   }
@@ -101,14 +113,14 @@ function parseBeforeMatchData(data, index) {
   const position = positionMap[positionIndex];
 
   let Data = {};
-  const BeforeMatchData = data.match[team][position];
+  const BeforeMatchData = data?.match[team][position];
 
   Data["currentTeam"] = displayTeamMap[team];
   Data["currentPosition"] = displayPositionMap[position];
-  Data["currentChampion"] = BeforeMatchData.champ.display_name;
-  Data["Most"] = BeforeMatchData.most_pick.display_name;
-  Data["WinRate"] = BeforeMatchData.win_rate;
-  Data["History"] = parseHistory(BeforeMatchData.history);
+  Data["currentChampion"] = BeforeMatchData?.champ?.display_name;
+  Data["Most"] = BeforeMatchData?.most_pick?.display_name;
+  Data["WinRate"] = BeforeMatchData?.win_rate;
+  Data["History"] = parseHistory(BeforeMatchData?.history);
 
   return Data;
 }
@@ -126,8 +138,6 @@ class MatchViewModel {
   BeforeMatchData = null;
   myScore = null;
   currentRound = null;
-
-  fetchWin = fetchWin;
 
   handleSideBar = () => {
     this.isSideBarOpen = !this.isSideBarOpen;
@@ -147,12 +157,17 @@ class MatchViewModel {
     this.BeforeMatchData = parsedBeforeMatchData;
   };
 
+  handleSubmitWin = (team) => {
+    submitAnswer(team);
+    this.initialize();
+  };
+
   constructor() {
     makeAutoObservable(this);
   }
 
   async initialize() {
-    this.RawData = getMatchData();
+    this.RawData = await getMatchData();
     const parsedData = await parseMatchData(this.RawData);
     const parsedAnswer = await parseAnswerData(this.RawData);
 
