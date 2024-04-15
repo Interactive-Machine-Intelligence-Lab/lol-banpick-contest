@@ -74,7 +74,7 @@ const ResultView = observer(({ vm }) => {
             }}
           >
             <BlurredBox
-              name={vm.myCurrentRanking + "th / " + vm.totalPeople}
+              name={vm.myCurrentRanking + "th / " + vm.totalRanking}
               width="35%"
               height="15%"
               fontsize={"3em"}
@@ -101,7 +101,7 @@ const ResultView = observer(({ vm }) => {
                   <ScoreCircle
                     radius={"250px"}
                     score={vm.myBestScore}
-                    grade={vm.myBestRanking + " / " + vm.totalPeople}
+                    grade={vm.myBestRanking + " / " + vm.totalRanking}
                   />
                 </ColumnBox>
               </div>
@@ -125,7 +125,7 @@ const ResultView = observer(({ vm }) => {
                   <ScoreCircle
                     radius={"250px"}
                     score={vm.myCurrentScore}
-                    grade={vm.myCurrentRanking + " / " + vm.totalPeople}
+                    grade={vm.myCurrentRanking + " / " + vm.totalRanking}
                   />
                 </ColumnBox>
               </div>
@@ -137,12 +137,14 @@ const ResultView = observer(({ vm }) => {
               height={"30%"}
               name={"Retry"}
               fontsize={"2em"}
+              onClick={vm.handleRetryClick}
             />
             <Button
               width={"40%"}
               height={"30%"}
               name={"Go Home"}
               fontsize={"2em"}
+              onClick={vm.handleGoHomeClick}
             />
           </RowButtonBox>
         </ContextBox>

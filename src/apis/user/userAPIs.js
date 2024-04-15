@@ -23,7 +23,7 @@ const RefreshToken = async (token) => {
   return response;
 };
 
-const ResetAccount = async (token) => {
+const ResetAccountAPI = async (token) => {
   const response = await axios.post(
     "https://lol.dshs.site/api/auth/reset_account",
     null,
@@ -34,4 +34,4 @@ const ResetAccount = async (token) => {
   return response;
 };
 
-export { UserRegisterAPI, LogInAPI, RefreshToken, ResetAccount };
+export { UserRegisterAPI, LogInAPI, RefreshToken, ResetAccountAPI };

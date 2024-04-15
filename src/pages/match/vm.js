@@ -1,8 +1,8 @@
 import { makeAutoObservable, runInAction } from "mobx";
 import { tokenStore } from "../../store/Auth";
-import MockData from "../../assets/mockdata/mockdata.json";
 import { GetMatchAPI, SubmitAnswerAPI } from "../../apis/match/matchAPIs";
-import { toJS } from "mobx";
+import { ResetAccountAPI } from "../../apis/user/userAPIs";
+import { routerStore } from "../../store/route";
 
 const teamMap = {
   0: "blue_team",
@@ -31,7 +31,12 @@ async function getMatchData() {
   if (tokenStore.authenticated) {
     const token = tokenStore.accessToken;
     const response = await GetMatchAPI(token);
-    return response;
+    if (response.status === 400) {
+      await ResetAccountAPI(token);
+      routerStore.goToResult();
+    } else {
+      return response.data;
+    }
   } else {
     return null;
   }
@@ -157,8 +162,17 @@ class MatchViewModel {
     this.BeforeMatchData = parsedBeforeMatchData;
   };
 
-  handleSubmitWin = (team) => {
-    submitAnswer(team);
+  handleSubmitWin = async (team) => {
+    let answer;
+    if (team === "blue") {
+      answer = 0;
+    } else {
+      answer = 1;
+    }
+
+    this.RawData = null;
+    const response = await submitAnswer(answer);
+    this.score = response.total_score;
     this.initialize();
   };
 
@@ -167,6 +181,7 @@ class MatchViewModel {
   }
 
   async initialize() {
+    this.RawData = null;
     this.RawData = await getMatchData();
     const parsedData = await parseMatchData(this.RawData);
     const parsedAnswer = await parseAnswerData(this.RawData);

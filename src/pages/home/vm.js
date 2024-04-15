@@ -1,8 +1,11 @@
-import axios from "axios";
 import { makeAutoObservable, runInAction } from "mobx";
 import { routerStore } from "../../store/route";
 import { tokenStore } from "../../store/Auth";
 import { removeCookieToken } from "../../storage/Cookie";
+import {
+  TotalLeaderBoardAPI,
+  BestLeaderboardAPI,
+} from "../../apis/rank/rankAPIs";
 
 async function parseLeaderBoard(data) {
   let result = [];
@@ -48,36 +51,21 @@ class HomeViewModel {
   };
 
   getLeaderBoardData = async () => {
-    try {
-      const response = await axios.get(
-        "https://lol.dshs.site/api/leaderboard/total_leaderboard/10"
-      );
-      const parsedData = await parseLeaderBoard(response.data.leaderboard);
-      runInAction(() => {
-        this.LeaderBoardData = parsedData;
-      });
-    } catch (error) {
-      console.error(error);
-    }
+    const response = await TotalLeaderBoardAPI();
+    const parsedData = await parseLeaderBoard(response.leaderboard);
+    runInAction(() => {
+      this.LeaderBoardData = parsedData;
+    });
   };
 
   getMyBestScore = async (token) => {
-    try {
-      const response = await axios.get(
-        "https://lol.dshs.site/api/leaderboard/best_leaderboard",
-        {
-          headers: { Authorization: `Bearer ${token}` },
-        }
-      );
-      const parsedData = await parseMyBestScore(response.data);
-      runInAction(() => {
-        this.myRanking = parsedData.myRanking;
-        this.totalRanking = parsedData.totalRanking;
-        this.myScore = parsedData.myScore;
-      });
-    } catch (error) {
-      console.error(error);
-    }
+    const response = await BestLeaderboardAPI(token);
+    const parsedData = await parseMyBestScore(response);
+    runInAction(() => {
+      this.myRanking = parsedData.myRanking;
+      this.totalRanking = parsedData.totalRanking;
+      this.myScore = parsedData.myScore;
+    });
   };
 
   handleStartClick = () => {

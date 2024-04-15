@@ -47,147 +47,144 @@ const MatchView = observer(({ vm }) => {
     vm.initialize();
   }, [vm]);
 
-  if (vm.RawData === null) {
-    return <Loading />;
-  } else {
-    return (
-      <div>
-        <SideMenuBar
-          score={vm.myScore}
-          isOpen={vm.isSideBarOpen}
-          handleOpen={vm.handleSideBar}
-        />
+  return (
+    <div>
+      <Loading show={vm.RawData === null ? true : false} />
+      <SideMenuBar
+        score={vm.myScore}
+        isOpen={vm.isSideBarOpen}
+        handleOpen={vm.handleSideBar}
+      />
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <MenuButtonContainerStyle>
+          <img
+            src={SideMenuBtn}
+            style={{ width: "20%" }}
+            alt="menubtn"
+            onClick={vm.handleSideBar}
+          />
+        </MenuButtonContainerStyle>
+        <Background />
         <div
           style={{
             display: "flex",
-            flexDirection: "column",
+            width: "100%",
+            height: "5vh",
             justifyContent: "center",
             alignItems: "center",
+            margin: 15,
           }}
         >
-          <MenuButtonContainerStyle>
-            <img
-              src={SideMenuBtn}
-              style={{ width: "20%" }}
-              alt="menubtn"
-              onClick={vm.handleSideBar}
+          <RoundBoard round={vm.currentRound} />
+        </div>
+        <div
+          style={{
+            display: vm.isBeforeMatchOpen ? "flex" : "none",
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100vw",
+            height: "100vh",
+            justifyContent: "center",
+            alignItems: "center",
+            zIndex: 2,
+          }}
+        >
+          <BeforeMatchView
+            data={vm.BeforeMatchData}
+            handleClose={vm.handleCloseBeforeMatch}
+          />
+        </div>
+
+        <div
+          style={{
+            display: "flex",
+            width: "70%",
+            height: "100%",
+          }}
+        >
+          <GridContainer>
+            <ChampionCard
+              championName={vm.BlueChampionData?.names?.top}
+              teamPosition={"Blue\nTop"}
+              onClickF={vm.handleBeforeMatch}
+              index={0}
             />
-          </MenuButtonContainerStyle>
-          <Background />
-          <div
-            style={{
-              display: "flex",
-              width: "100%",
-              height: "5vh",
-              justifyContent: "center",
-              alignItems: "center",
-              margin: 15,
-            }}
-          >
-            <RoundBoard round={vm.currentRound} />
-          </div>
-          <div
-            style={{
-              display: vm.isBeforeMatchOpen ? "flex" : "none",
-              position: "fixed",
-              top: 0,
-              left: 0,
-              width: "100vw",
-              height: "100vh",
-              justifyContent: "center",
-              alignItems: "center",
-              zIndex: 2,
-            }}
-          >
-            <BeforeMatchView
-              data={vm.BeforeMatchData}
-              handleClose={vm.handleCloseBeforeMatch}
+            <ChampionCard
+              championName={vm.BlueChampionData?.names?.jungle}
+              teamPosition={"Blue\nJungle"}
+              onClickF={vm.handleBeforeMatch}
+              index={1}
             />
-          </div>
+            <ChampionCard
+              championName={vm.BlueChampionData?.names?.mid}
+              teamPosition={"Blue\nMid"}
+              onClickF={vm.handleBeforeMatch}
+              index={2}
+            />
+            <ChampionCard
+              championName={vm.BlueChampionData?.names?.adc}
+              teamPosition={"Blue\nAdc"}
+              onClickF={vm.handleBeforeMatch}
+              index={3}
+            />
+            <ChampionCard
+              championName={vm.BlueChampionData?.names?.support}
+              teamPosition={"Blue\nSupport"}
+              onClickF={vm.handleBeforeMatch}
+              index={4}
+            />
 
-          <div
-            style={{
-              display: "flex",
-              width: "70%",
-              height: "100%",
-            }}
-          >
-            <GridContainer>
-              <ChampionCard
-                championName={vm.BlueChampionData?.names?.top}
-                teamPosition={"Blue\nTop"}
-                onClickF={vm.handleBeforeMatch}
-                index={0}
+            <FullWidthBox>
+              <WinPick
+                round={vm.currentRound}
+                score={vm.myScore}
+                fetchFunction={vm.handleSubmitWin}
               />
-              <ChampionCard
-                championName={vm.BlueChampionData?.names?.jungle}
-                teamPosition={"Blue\nJungle"}
-                onClickF={vm.handleBeforeMatch}
-                index={1}
-              />
-              <ChampionCard
-                championName={vm.BlueChampionData?.names?.mid}
-                teamPosition={"Blue\nMid"}
-                onClickF={vm.handleBeforeMatch}
-                index={2}
-              />
-              <ChampionCard
-                championName={vm.BlueChampionData?.names?.adc}
-                teamPosition={"Blue\nAdc"}
-                onClickF={vm.handleBeforeMatch}
-                index={3}
-              />
-              <ChampionCard
-                championName={vm.BlueChampionData?.names?.support}
-                teamPosition={"Blue\nSupport"}
-                onClickF={vm.handleBeforeMatch}
-                index={4}
-              />
+            </FullWidthBox>
 
-              <FullWidthBox>
-                <WinPick
-                  round={vm.currentRound}
-                  score={vm.myScore}
-                  fetchFunction={vm.fetchWin}
-                />
-              </FullWidthBox>
-
-              <ChampionCard
-                championName={vm.RedChampionData?.names?.top}
-                teamPosition={"Red\nTop"}
-                onClickF={vm.handleBeforeMatch}
-                index={5}
-              />
-              <ChampionCard
-                championName={vm.RedChampionData?.names?.jungle}
-                teamPosition={"Red\nJungle"}
-                onClickF={vm.handleBeforeMatch}
-                index={6}
-              />
-              <ChampionCard
-                championName={vm.RedChampionData?.names?.mid}
-                teamPosition={"Red\nMid"}
-                onClickF={vm.handleBeforeMatch}
-                index={7}
-              />
-              <ChampionCard
-                championName={vm.RedChampionData?.names?.adc}
-                teamPosition={"Red\nAdc"}
-                onClickF={vm.handleBeforeMatch}
-                index={8}
-              />
-              <ChampionCard
-                championName={vm.RedChampionData?.names?.support}
-                teamPosition={"Red\nSupport"}
-                onClickF={vm.handleBeforeMatch}
-                index={9}
-              />
-            </GridContainer>
-          </div>
+            <ChampionCard
+              championName={vm.RedChampionData?.names?.top}
+              teamPosition={"Red\nTop"}
+              onClickF={vm.handleBeforeMatch}
+              index={5}
+            />
+            <ChampionCard
+              championName={vm.RedChampionData?.names?.jungle}
+              teamPosition={"Red\nJungle"}
+              onClickF={vm.handleBeforeMatch}
+              index={6}
+            />
+            <ChampionCard
+              championName={vm.RedChampionData?.names?.mid}
+              teamPosition={"Red\nMid"}
+              onClickF={vm.handleBeforeMatch}
+              index={7}
+            />
+            <ChampionCard
+              championName={vm.RedChampionData?.names?.adc}
+              teamPosition={"Red\nAdc"}
+              onClickF={vm.handleBeforeMatch}
+              index={8}
+            />
+            <ChampionCard
+              championName={vm.RedChampionData?.names?.support}
+              teamPosition={"Red\nSupport"}
+              onClickF={vm.handleBeforeMatch}
+              index={9}
+            />
+          </GridContainer>
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 });
 
 export default MatchView;

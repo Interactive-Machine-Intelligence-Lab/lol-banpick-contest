@@ -18,12 +18,11 @@ const LoadingContainer = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(20, 20, 20, 0.2); // 약간 투명한 배경
+  background-color: rgba(20, 20, 20, 0.6); // 약간 투명한 배경
   display: ${(props) => (props.show ? "flex" : "none")};
   justify-content: center;
   align-items: center;
   z-index: 100;
-  pointer-events: none; // 모든 클릭 및 스크롤 이벤트 차단
 `;
 
 const LoadingSpinner = styled.div`

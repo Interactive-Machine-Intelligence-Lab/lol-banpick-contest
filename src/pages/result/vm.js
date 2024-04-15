@@ -1,10 +1,19 @@
 import { makeAutoObservable, runInAction } from "mobx";
+import { tokenStore } from "../../store/Auth";
+import {
+  BestLeaderboardAPI,
+  CurrentLeaderBoardAPI,
+} from "../../apis/rank/rankAPIs";
+import { routerStore } from "../../store/route";
 import mockdata from "../../assets/mockdata/mockdata.json";
 
 const development = true;
 
-async function parseBest(data) {
-  return data;
+async function parseMyScore(data) {
+  const myRanking = data.rank;
+  const totalRanking = data.num_users;
+  const myScore = data.score;
+  return { myRanking, totalRanking, myScore };
 }
 
 async function parseCurrent(data) {
@@ -12,13 +21,19 @@ async function parseCurrent(data) {
 }
 
 class ResultViewModel {
-  isLoggedin = false;
-
-  totalPeople = null;
+  totalRanking = null;
   myBestScore = null;
   myBestRanking = null;
   myCurrentScore = null;
   myCurrentRanking = null;
+
+  handleGoHomeClick = () => {
+    routerStore.goToHome();
+  };
+
+  handleRetryClick = () => {
+    routerStore.goToMatch();
+  };
 
   constructor() {
     makeAutoObservable(this);
@@ -26,18 +41,30 @@ class ResultViewModel {
     this.initialize();
   }
 
-  async initialize() {
-    const parsedBestData = await parseBest(mockdata.result.best);
-    const parsedCurrentData = await parseCurrent(mockdata.result.current);
-
+  getMyBestScore = async (token) => {
+    const response = await BestLeaderboardAPI(token);
+    const parsedData = await parseMyScore(response);
     runInAction(() => {
-      if (development) {
-        this.isLoggedin = true;
-        this.totalPeople = parsedBestData.total;
-        this.myBestRanking = parsedBestData.rank;
-        this.myBestScore = parsedBestData.score;
-        this.myCurrentRanking = parsedCurrentData.rank;
-        this.myCurrentScore = parsedCurrentData.score;
+      this.myBestRanking = parsedData.myRanking;
+      this.totalRanking = parsedData.totalRanking;
+      this.myBestScore = parsedData.myScore;
+    });
+  };
+
+  getMyCurrentScore = async (token) => {
+    const response = await CurrentLeaderBoardAPI(token);
+    const parsedData = await parseMyScore(response);
+    runInAction(() => {
+      this.myCurrentRanking = parsedData.myRanking;
+      this.myCurrentScore = parsedData.myScore;
+    });
+  };
+
+  async initialize() {
+    runInAction(() => {
+      if (tokenStore.authenticated) {
+        this.getMyBestScore(tokenStore.accessToken);
+        this.getMyCurrentScore(tokenStore.accessToken);
       }
     });
   }
