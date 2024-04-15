@@ -143,6 +143,7 @@ class MatchViewModel {
   BeforeMatchData = null;
   myScore = null;
   currentRound = null;
+  solvedProblem = null;
 
   handleSideBar = () => {
     this.isSideBarOpen = !this.isSideBarOpen;
@@ -186,12 +187,18 @@ class MatchViewModel {
     const parsedData = await parseMatchData(this.RawData);
     const parsedAnswer = await parseAnswerData(this.RawData);
 
+    if (!tokenStore.authenticated) {
+      routerStore.goToSignInReplaced();
+      return;
+    }
+
     runInAction(() => {
       this.MatchData = parsedData;
       this.BlueChampionData = parsedData.blue;
       this.RedChampionData = parsedData.red;
       this.myScore = parsedAnswer.score;
-      this.currentRound = parsedAnswer.round;
+      this.solvedProblem = parsedAnswer.round;
+      this.currentRound = parsedAnswer.round + 1;
     });
   }
 }

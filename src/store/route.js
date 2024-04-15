@@ -29,6 +29,12 @@ class RouterStore {
     }
   };
 
+  goToSignInReplaced = () => {
+    if (this.navigate) {
+      this.navigate("/user/signin", { replace: true });
+    }
+  };
+
   goToMatch = () => {
     if (this.navigate) {
       this.navigate("/match");

@@ -18,6 +18,7 @@ const BestLeaderboardAPI = async (token) => {
 };
 
 const CurrentLeaderBoardAPI = async (token) => {
+  const params = { return_prev_when_score_is_0: 1 };
   try {
     const response = await axios.get(
       "https://lol.dshs.site/api/leaderboard/current_leaderboard",
@@ -25,6 +26,7 @@ const CurrentLeaderBoardAPI = async (token) => {
         headers: {
           Authorization: `Bearer ${token}`,
         },
+        params: params,
       }
     );
     return response.data;

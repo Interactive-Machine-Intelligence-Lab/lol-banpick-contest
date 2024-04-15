@@ -84,6 +84,7 @@ class LoginViewModel {
         this.setPassword("");
       }
     } else {
+      this.loginStatus = "error";
       if (statusCode === 1) {
         this.errormsg = "ID가 조건에 맞지 않습니다.";
       } else if (statusCode === 2) {

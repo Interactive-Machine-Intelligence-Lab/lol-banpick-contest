@@ -144,7 +144,7 @@ const MatchView = observer(({ vm }) => {
 
             <FullWidthBox>
               <WinPick
-                round={vm.currentRound}
+                round={vm.solvedProblem}
                 score={vm.myScore}
                 fetchFunction={vm.handleSubmitWin}
               />

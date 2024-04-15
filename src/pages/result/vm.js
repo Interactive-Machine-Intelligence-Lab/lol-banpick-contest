@@ -5,9 +5,6 @@ import {
   CurrentLeaderBoardAPI,
 } from "../../apis/rank/rankAPIs";
 import { routerStore } from "../../store/route";
-import mockdata from "../../assets/mockdata/mockdata.json";
-
-const development = true;
 
 async function parseMyScore(data) {
   const myRanking = data.rank;
