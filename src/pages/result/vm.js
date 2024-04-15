@@ -13,10 +13,6 @@ async function parseMyScore(data) {
   return { myRanking, totalRanking, myScore };
 }
 
-async function parseCurrent(data) {
-  return data;
-}
-
 class ResultViewModel {
   totalRanking = null;
   myBestScore = null;

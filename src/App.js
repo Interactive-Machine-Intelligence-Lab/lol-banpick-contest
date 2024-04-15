@@ -15,6 +15,8 @@ import { Routes, Route, useNavigate } from "react-router-dom";
 import { routerStore } from "./store/route";
 import { useEffect } from "react";
 
+import refreshBrowser from "./apis/interceptors/interceptors";
+
 function NavigationProvider() {
   const navigate = useNavigate();
 
@@ -31,6 +33,8 @@ function App() {
   const resultvm = new ResultViewModel();
   const LogInvm = new LoginViewModel();
   const SignUpvm = new SignUpViewModel();
+
+  refreshBrowser();
 
   return (
     <>

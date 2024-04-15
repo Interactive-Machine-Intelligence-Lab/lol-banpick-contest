@@ -16,7 +16,7 @@ const LogInAPI = async (context) => {
   return response;
 };
 
-const RefreshToken = async (token) => {
+const RefreshAccessAPI = async (token) => {
   const response = await axios.get("https://lol.dshs.site/api/auth/refresh", {
     headers: { Authorization: `Bearer ${token}` },
   });
@@ -34,4 +34,4 @@ const ResetAccountAPI = async (token) => {
   return response;
 };
 
-export { UserRegisterAPI, LogInAPI, RefreshToken, ResetAccountAPI };
+export { UserRegisterAPI, LogInAPI, RefreshAccessAPI, ResetAccountAPI };
