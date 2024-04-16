@@ -1,35 +1,32 @@
-import axios from "axios";
+import { instance } from "../interceptors/interceptors";
 
 const UserRegisterAPI = async (context) => {
-  const response = await axios.post(
+  const response = await instance.post(
     "https://lol.dshs.site/api/auth/register",
-    context
+    context,
+    { customConfig: { skipAuth: true } }
   );
   return response;
 };
 
 const LogInAPI = async (context) => {
-  const response = await axios.post(
+  const response = await instance.post(
     "https://lol.dshs.site/api/auth/login",
-    context
+    context,
+    { customConfig: { skipAuth: true } }
   );
   return response;
 };
 
-const RefreshAccessAPI = async (token) => {
-  const response = await axios.get("https://lol.dshs.site/api/auth/refresh", {
-    headers: { Authorization: `Bearer ${token}` },
-  });
+const RefreshAccessAPI = async () => {
+  const response = await instance.get("https://lol.dshs.site/api/auth/refresh");
   return response;
 };
 
-const ResetAccountAPI = async (token) => {
-  const response = await axios.post(
+const ResetAccountAPI = async () => {
+  const response = await instance.post(
     "https://lol.dshs.site/api/auth/reset_account",
-    null,
-    {
-      headers: { Authorization: `Bearer ${token}` },
-    }
+    null
   );
   return response;
 };

@@ -59,7 +59,7 @@ class HomeViewModel {
   };
 
   getMyBestScore = async (token) => {
-    const response = await BestLeaderboardAPI(token);
+    const response = await BestLeaderboardAPI();
     const parsedData = await parseMyBestScore(response);
     runInAction(() => {
       this.myRanking = parsedData.myRanking;

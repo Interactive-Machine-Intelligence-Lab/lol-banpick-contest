@@ -1,12 +1,8 @@
-import axios from "axios";
+import { instance } from "../interceptors/interceptors";
 
 const GetMatchAPI = async (token) => {
   try {
-    const response = await axios.get("https://lol.dshs.site/api/match/get", {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    });
+    const response = await instance.get("https://lol.dshs.site/api/match/get");
     return response;
   } catch (err) {
     console.log("An error occurred while fetching the match data: ", err);
@@ -16,15 +12,10 @@ const GetMatchAPI = async (token) => {
 
 const SubmitAnswerAPI = async (token, team) => {
   try {
-    const response = await axios.post(
+    const response = await instance.post(
       "https://lol.dshs.site/api/match/submit",
       {
         answer: team,
-      },
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
       }
     );
     return response.data;
