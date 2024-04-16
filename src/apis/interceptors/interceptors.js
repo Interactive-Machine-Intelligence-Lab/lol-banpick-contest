@@ -28,7 +28,10 @@ instance.interceptors.response.use(
   (response) => response,
   async (error) => {
     const originalRequest = error.config;
-    if (error.response.status === 401 && !originalRequest._retry) {
+    if (
+      (error.response.status === 401 || error.response.status === 422) &&
+      !originalRequest._retry
+    ) {
       originalRequest._retry = true;
       await refreshToken();
 
@@ -38,17 +41,21 @@ instance.interceptors.response.use(
 
       return instance(originalRequest);
     }
+    return Promise.reject(error);
   }
 );
 
 const refreshToken = async () => {
+  if (!getCookieToken()) {
+    routerStore.goToSignIn();
+    return;
+  }
   RefreshAccessAPI(getCookieToken())
     .then((res) => {
       tokenStore.setToken(res.data.access_token);
     })
     .catch((err) => {
       console.log(err);
-      routerStore.goToSignIn();
       return Promise.reject(err);
     });
 };

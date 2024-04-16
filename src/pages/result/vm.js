@@ -30,12 +30,10 @@ class ResultViewModel {
 
   constructor() {
     makeAutoObservable(this);
-
-    this.initialize();
   }
 
-  getMyBestScore = async (token) => {
-    const response = await BestLeaderboardAPI(token);
+  getMyBestScore = async () => {
+    const response = await BestLeaderboardAPI();
     const parsedData = await parseMyScore(response);
     runInAction(() => {
       this.myBestRanking = parsedData.myRanking;
@@ -44,8 +42,8 @@ class ResultViewModel {
     });
   };
 
-  getMyCurrentScore = async (token) => {
-    const response = await CurrentLeaderBoardAPI(token);
+  getMyCurrentScore = async () => {
+    const response = await CurrentLeaderBoardAPI();
     const parsedData = await parseMyScore(response);
     runInAction(() => {
       this.myCurrentRanking = parsedData.myRanking;
@@ -56,8 +54,8 @@ class ResultViewModel {
   async initialize() {
     runInAction(() => {
       if (tokenStore.authenticated) {
-        this.getMyBestScore(tokenStore.accessToken);
-        this.getMyCurrentScore(tokenStore.accessToken);
+        this.getMyBestScore();
+        this.getMyCurrentScore();
       }
     });
   }

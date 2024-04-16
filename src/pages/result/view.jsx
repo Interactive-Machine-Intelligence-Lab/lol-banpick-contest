@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import BlurredBox from "../../components/blurredbox";
 import ContextBox from "../../components/contextbox";
@@ -57,6 +57,10 @@ const RowButtonBox = styled.div`
 `;
 
 const ResultView = observer(({ vm }) => {
+  useEffect(() => {
+    vm.initialize();
+  }, [vm]);
+
   return (
     <div>
       <Background />
