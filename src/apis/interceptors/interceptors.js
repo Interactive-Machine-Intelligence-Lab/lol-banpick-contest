@@ -60,4 +60,4 @@ const refreshToken = async () => {
     });
 };
 
-export { instance };
+export { instance, refreshToken };

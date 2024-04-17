@@ -184,6 +184,7 @@ class MatchViewModel {
   async initialize() {
     this.RawData = null;
     this.RawData = await getMatchData();
+    this.isSideBarOpen = false;
     const parsedData = await parseMatchData(this.RawData);
     const parsedAnswer = await parseAnswerData(this.RawData);
 

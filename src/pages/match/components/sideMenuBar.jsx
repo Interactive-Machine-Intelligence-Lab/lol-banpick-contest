@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Button from "../../../components/button";
 import ContextBox from "../../../components/contextbox";
 import { useSpring, animated } from "react-spring";
+import { routerStore } from "../../../store/route";
 
 const StatusStyle = styled.div`
   margin: 5% 0;
@@ -124,7 +125,15 @@ const SideMenuBar = ({ score, isOpen, handleOpen }) => {
           {"Current Score: " + score}
         </CurrentScoreContainer>
         <LeaderBoardsStyle></LeaderBoardsStyle>
-        <Button name="Go Home" width="60%" height="6%" fontsize={"1.8em"} />
+        <Button
+          name="Go Home"
+          width="60%"
+          height="6%"
+          fontsize={"1.8em"}
+          onClick={() => {
+            routerStore.goToHome();
+          }}
+        />
       </AnimatedContextBox>
     </div>
   );
