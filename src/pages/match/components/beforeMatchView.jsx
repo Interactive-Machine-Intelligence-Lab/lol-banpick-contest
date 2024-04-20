@@ -195,70 +195,73 @@ const TrophyImage = styled.div`
 `;
 
 const BeforeMatchCard = ({ data }) => {
+  if (data?.winTeam === undefined) {
+    return null;
+  }
   return (
     <MatchTemplateCard>
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.blue_team.top.display_name + "_squared.jpg"
+          data?.blue_team.top.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[0]}
+        ifIsMe={data?.myPosition[0]}
       />
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.blue_team.jungle.display_name + "_squared.jpg"
+          data?.blue_team.jungle.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[1]}
+        ifIsMe={data?.myPosition[1]}
       />
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.blue_team.mid.display_name + "_squared.jpg"
+          data?.blue_team.mid.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[2]}
+        ifIsMe={data?.myPosition[2]}
       />
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.blue_team.adc.display_name + "_squared.jpg"
+          data?.blue_team.adc.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[3]}
+        ifIsMe={data?.myPosition[3]}
       />
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.blue_team.support.display_name + "_squared.jpg"
+          data?.blue_team.support.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[4]}
+        ifIsMe={data?.myPosition[4]}
       />
-      <TrophyImage win={data.winTeam === 0 ? "blue" : "red"}>
+      <TrophyImage win={data?.winTeam === 0 ? "blue" : "red"}>
         <img src={Trophy} alt="Example" width={30} height={30} />
       </TrophyImage>
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.red_team.top.display_name + "_squared.jpg"
+          data?.red_team.top.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[5]}
+        ifIsMe={data?.myPosition[5]}
       />
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.red_team.jungle.display_name + "_squared.jpg"
+          data?.red_team.jungle.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[6]}
+        ifIsMe={data?.myPosition[6]}
       />
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.red_team.mid.display_name + "_squared.jpg"
+          data?.red_team.mid.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[7]}
+        ifIsMe={data?.myPosition[7]}
       />
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.red_team.adc.display_name + "_squared.jpg"
+          data?.red_team.adc.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[8]}
+        ifIsMe={data?.myPosition[8]}
       />
       <ChampionImage
         src={`${process.env.PUBLIC_URL}/image/${
-          data.red_team.support.display_name + "_squared.jpg"
+          data?.red_team.support.display_name + "_squared.jpg"
         }`}
-        ifIsMe={data.myPosition[9]}
+        ifIsMe={data?.myPosition[9]}
       />
     </MatchTemplateCard>
   );
